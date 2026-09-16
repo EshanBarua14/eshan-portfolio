@@ -134,7 +134,7 @@
                         <div class="text-xs text-slate-400 mt-1">Engineering Leadership</div>
                     </div>
                     <div class="glass-panel p-5 rounded-2xl">
-                        <div class="text-2xl font-bold text-white font-mono">7+ Builds</div>
+                        <div class="text-2xl font-bold text-white font-mono">9+ Builds</div>
                         <div class="text-xs text-slate-400 mt-1">SaaS & AI Platforms</div>
                     </div>
                     <div class="glass-panel p-5 rounded-2xl">
@@ -961,199 +961,358 @@
     </main>
 
     <script>
-        lucide.createIcons();
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwG9JgPvcFmHLt6CCyobj_FgeoTmtobvwT9bEmKAr_c1UbMtDsdc9fSbv6PikMUhw/exec";
+        let currentPrice = 0;
 
-        // Canvas Background Animation
-        const canvas = document.getElementById('bg-canvas');
-        const ctx = canvas.getContext('2d');
+        const translations = {
+            en: {
+                "banner-text": "1,850+ Subscriptions Delivered • 30-Day Money-Back & Replacement Warranty 🛡️",
+                "official-page": "Official Page",
+                "nav-sub": "AI Subscriptions & SSL Security",
+                "menu-pricing": "Pricing Plans",
+                "menu-reviews": "Reviews",
+                "menu-track": "Track Order",
+                "btn-get-started": "Get Started",
+                "hero-badge": "30-Day Money-Back & Replacement Warranty • Instant bKash & Nagad Gateway",
+                "hero-title": "AI Subscriptions, Domains, Hosting & Certera SSL Powered by <span class=\"bg-gradient-to-r from-cyan-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent\">Local Payments</span>",
+                "hero-desc": "Bypass international card limits. Secure your digital assets with advanced single-domain Certera SSL certificates, web hosting, domains, and professional AI subscriptions backed by our 30-Day Replacement Guarantee.",
+                "w-title-1": "30-Day Warranty",
+                "w-desc-1": "Full money-back & instant replacement guarantee.",
+                "w-title-2": "24/7 Expert Support",
+                "w-desc-2": "Dedicated local support via WhatsApp & Telegram.",
+                "w-title-3": "Instant Delivery",
+                "w-desc-3": "Automated activation within 5 to 15 minutes.",
+                "btn-browse": "<i class=\"fa-solid fa-bolt mr-2\"></i> Browse Verified Packages",
+                "btn-whatsapp": "Chat on WhatsApp",
+                "pricing-heading": "Official Packages & Local Pricing",
+                "pricing-sub": "Full authentic features included with 30-day replacement warranty and expert local setup.",
+                "tab-all": "All Platforms",
+                "tab-private": "Private Personal",
+                "tab-shared": "Shared Tiers & Security",
+                "p-top-choice": "Top Choice",
+                "p-most-popular": "Most Popular",
+                "p-security-essential": "Security Essential",
+                "p-private-account": "Private Account",
+                "p-workspace-seat": "Workspace Seat",
+                "p-advanced-tier": "Advanced Tier",
+                "p-realtime-ai": "Real-time AI",
+                "p-search-pro": "Search Pro",
+                "p-image-gen": "Image Gen",
+                "p-cloud-hosting": "Cloud Hosting",
+                "p-domain-name": "Domain Name",
+                "p-domain-security": "Domain Security",
+                "p-voice-gen": "Voice Gen",
+                "p1-desc": "Official $20/mo plan upgraded directly on your email with 30-day warranty.",
+                "p2-desc": "Claude 3.5 Sonnet team workspace invitation with full warranty.",
+                "p3-desc": "Full Google One AI Premium integration with 1M+ context window.",
+                "p4-desc": "Unfiltered real-time intelligence & heavy reasoning via X integration.",
+                "p5-desc": "AI research engine with GPT-4 & Claude 3.5 Sonnet pro searches.",
+                "p6-desc": "Professional text-to-image AI generator with unlimited relaxed hours.",
+                "p7-desc": "Fast SSD NVMe web hosting with cPanel & free SSL.",
+                "p8-desc": "Secure your brand identity with full DNS control.",
+                "p9-desc": "Official Certera single-domain DV SSL certificate for robust HTTPS security.",
+                "p10-desc": "Hyper-realistic text-to-speech and professional voice cloning pipelines.",
+                "btn-order": "Order Now",
+                "per-month": " / month",
+                "per-year": " / year",
+                "reviews-heading": "Individual User Reviews & Ratings",
+                "reviews-sub": "Browse personal verified reviews for our primary products and services.",
+                "r1-text": "\"The 1M context window is incredible! Handled massive research documentation instantly with lightning-fast bKash setup.\"",
+                "r1-role": "AI Researcher, Dhaka",
+                "r2-text": "\"Real-time X integration gives unbeatable market insights. Upgraded seamlessly within 10 minutes!\"",
+                "r2-role": "Data Analyst",
+                "r3-text": "\"The 30-day warranty and active support gave me full peace of mind. Best private account service in Bangladesh.\"",
+                "r3-role": "Content Creator",
+                "r4-text": "\"Claude 3.5 Sonnet coding assistance is top-notch. Fast activation and zero hassle with local payments.\"",
+                "r4-role": "Software Engineer",
+                "r5-text": "\"Replaced traditional Google search entirely. Super fast research with reliable inline citations.\"",
+                "r5-role": "Researcher",
+                "track-heading": "Live Order & TrxID Tracker",
+                "track-sub": "Enter your bKash or Nagad Transaction ID to check real-time status.",
+                "btn-track": "Track",
+                "footer-rights": "© 2026 All Rights Reserved • 30-Day Money-Back & Replacement Warranty",
+                "designed-by": "Designed By:",
+                "developed-by": "Developed By:",
+                "powered-by": "Powered By:"
+            },
+            bn: {
+                "banner-text": "১,৮৫০+ সাবস্ক্রিপশন সফলভাবে ডেলিভারড • ৩০ দিনের মানি-ব্যাক ও রিপ্লেসমেন্ট ওয়ারেন্টি 🛡️",
+                "official-page": "অফিশিয়াল পেজ",
+                "nav-sub": "এআই সাবস্ক্রিপশন ও এসএসএল সিকিউরিটি",
+                "menu-pricing": "মূল্যতালিকা",
+                "menu-reviews": "রিভিউ",
+                "menu-track": "অর্ডার ট্র্যাক",
+                "btn-get-started": "শুরু করুন",
+                "hero-badge": "৩০ দিনের মানি-ব্যাক ও রিপ্লেসমেন্ট ওয়ারেন্টি • বিকাশ ও নগদ পেমেন্ট গেটওয়ে",
+                "hero-title": "এআই সাবস্ক্রিপশন, ডোমেইন, হোস্টিং ও সার্টেরা এসএসএল <span class=\"bg-gradient-to-r from-cyan-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent\">লোকাল পেমেন্টে</span>",
+                "hero-desc": "ইন্টারন্যাশনাল কার্ডের ঝামেলা ছাড়াই নিন এআই টুলস, হাই-পারফরম্যান্স ওয়েব হোস্টিং, ডোমেইন এবং প্রোফেশনাল সার্টেরা এসএসএল সার্টিফিকেট—সাথে থাকছে ৩০ দিনের রিপ্লেসমেন্ট গ্যারান্টি।",
+                "w-title-1": "৩০ দিনের ওয়ারেন্টি",
+                "w-desc-1": "সম্পূর্ণ মানি-ব্যাক এবং তাৎক্ষণিক রিপ্লেসমেন্ট গ্যারান্টি।",
+                "w-title-2": "২৪/৭ এক্সপার্ট সাপোর্ট",
+                "w-desc-2": "হোয়াটসঅ্যাপ ও টেলিগ্রামে সরাসরি ডেডিকেটেড সাপোর্ট।",
+                "w-title-3": "তাৎক্ষণিক ডেলিভারি",
+                "w-desc-3": "অর্ডার করার ৫ থেকে ১৫ মিনিটের মধ্যে স্বয়ংক্রিয় এক্টিভেশন।",
+                "btn-browse": "<i class=\"fa-solid fa-bolt mr-2\"></i> প্যাকেজগুলো দেখুন",
+                "btn-whatsapp": "হোয়াটসঅ্যাপে চ্যাট করুন",
+                "pricing-heading": "অফিশিয়াল প্যাকেজ ও লোকাল প্রাইসিং",
+                "pricing-sub": "ফুল অথেনটিক ফিচার সহ ৩০ দিনের রিপ্লেসমেন্ট ওয়ারেন্টি ও লোকাল সাপোর্ট।",
+                "tab-all": "সকল প্ল্যাটফর্ম",
+                "tab-private": "প্রাইভেট পারসোনাল",
+                "tab-shared": "শেয়ার্ড টায়ার ও সিকিউরিটি",
+                "p-top-choice": "সেরা পছন্দ",
+                "p-most-popular": "জনপ্রিয়",
+                "p-security-essential": "সিকিউরিটি স্পেশাল",
+                "p-private-account": "প্রাইভেট একাউন্ট",
+                "p-workspace-seat": "ওয়ার্কস্পেস সিট",
+                "p-advanced-tier": "এডভান্সড টায়ার",
+                "p-realtime-ai": "রিয়েল-টাইম এআই",
+                "p-search-pro": "সার্চ প্রো",
+                "p-image-gen": "ইমেজ জেন",
+                "p-cloud-hosting": "ক্লাউড হোস্টিং",
+                "p-domain-name": "ডোমেইন নেম",
+                "p-domain-security": "ডোমেইন সিকিউরিটি",
+                "p-voice-gen": "ভয়েস জেন",
+                "p1-desc": "আপনার নিজস্ব ইমেইলে অফিসিয়াল $২০/মাস প্ল্যান আপগ্রেড সাথে ৩০ দিনের ওয়ারেন্টি।",
+                "p2-desc": "ক্লড ৩.৫ সনেট টিম ওয়ার্কস্পেস ইনভাইটেশন ফুল রিপ্লেসমেন্ট ওয়ারেন্টি সহ।",
+                "p3-desc": "১ মিলিয়ন কনটেক্সট উইন্ডো সহ ফুল গুগল ওয়ান এআই প্রিমিয়াম এক্সেস।",
+                "p4-desc": "এক্স ইন্টিগ্রেশনের মাধ্যমে আনফিল্টারড রিয়েল-টাইম তথ্য ও পাওয়ারফুল রিজনিং।",
+                "p5-desc": "জিপিটি-৪ ও ক্লড ৩.৫ সনেট প্রো সার্চ সমৃদ্ধ শক্তিশালী এআই সার্চ ইঞ্জিন।",
+                "p6-desc": "আনলিমিটেড রিল্যাক্সড আওয়ার সহ প্রোফেশনাল টেক্সট-টু-ইমেজ এআই জেনারেটর।",
+                "p7-desc": "সিপ্যানেল ও ফ্রি এসএসএল সহ ফাস্ট এসএসডি এনভিএমই ওয়েব হোস্টিং।",
+                "p8-desc": "ফুল ডিএনএস কন্ট্রোল সহ আপনার ব্র্যান্ডের পরিচয় সুরক্ষিত করুন।",
+                "p9-desc": "এইচটিটিপিএস সিকিউরিটির জন্য অফিশিয়াল সার্টেরা সিঙ্গেল-ডোমেইন ডিভি এসএসএল।",
+                "p10-desc": "বাস্তবধর্মী টেক্সট-টু-স্পিচ এবং প্রোফেশনাল ভয়েস ক্লোনিং প্ল্যাটফর্ম।",
+                "btn-order": "অর্ডার করুন",
+                "per-month": " / মাস",
+                "per-year": " / বছর",
+                "reviews-heading": "গ্রাহকদের নিজস্ব রিভিউ ও রেটিং",
+                "reviews-sub": "আমাদের মূল পণ্য ও সেবাসমূহ সম্পর্কে ভেরিফায়েড কাস্টমারদের মতামত।",
+                "r1-text": "\"১ মিলিয়নের কনটেক্সট উইন্ডো দারুণ! বিশাল রিসার্চ পেপার মুহূর্তেই এনালাইজ করেছে। বিকাশে দ্রুত সেটআপ পেয়েছি।\"",
+                "r1-role": "এআই গবেষক, ঢাকা",
+                "r2-text": "\"রিয়েল-টাইম এক্স ডাটা মার্কেটের নিখুঁত ইনসাইট দেয়। ১০ মিনিটের ভেতর এক্টিভেশন পেয়েছি!\"",
+                "r2-role": "ডাটা এনালিস্ট",
+                "r3-text": "\"৩০ দিনের রিপ্লেসমেন্ট ওয়ারেন্টি এবং দ্রুত সাপোর্ট দারুণ ভরসা দেয়। বাংলাদেশের সেরা সার্ভিস।\"",
+                "r3-role": "কনটেন্ট ক্রিয়েটর",
+                "r4-text": "\"ক্লড ৩.৫ সনেটের কোডিং সহায়তা এক কথায় অসাধারণ। লোকাল পেমেন্টে কোনো ঝামেলাই নেই।\"",
+                "r4-role": "সফটওয়্যার ইঞ্জিনিয়ার",
+                "r5-text": "\"গুগল সার্চের প্রয়োজন প্রায় শেষ করে দিয়েছে। নির্ভুল সাইটেশন সহ দ্রুত গবেষণার সেরা টুল।\"",
+                "r5-role": "গবেষক",
+                "track-heading": "লাইভ অর্ডার ও TrxID ট্র্যাকার",
+                "track-sub": "আপনার পেমেন্টের রিয়েল-টাইম স্ট্যাটাস জানতে বিকাশ বা নগদ TrxID দিন।",
+                "btn-track": "ট্র্যাক করুন",
+                "footer-rights": "© ২০২৬ সর্বস্বত্ব সংরক্ষিত • ৩০ দিনের মানি-ব্যাক ও রিপ্লেসমেন্ট ওয়ারেন্টি",
+                "designed-by": "ডিজাইন করেছেন:",
+                "developed-by": "ডেভেলপ করেছেন:",
+                "powered-by": "পাওয়ার্ড বাই:"
+            }
+        };
 
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+        function setLanguage(lang) {
+            const enBtn = document.getElementById('lang-en-btn');
+            const bnBtn = document.getElementById('lang-bn-btn');
+            if(enBtn && bnBtn) {
+                enBtn.className = lang === 'en' ? "px-2 py-0.5 rounded bg-cyan-400 text-slate-950 font-bold text-[10px] shadow" : "px-2 py-0.5 rounded bg-slate-900 text-slate-300 font-bold text-[10px] border border-white/10";
+                bnBtn.className = lang === 'bn' ? "px-2 py-0.5 rounded bg-cyan-400 text-slate-950 font-bold text-[10px] shadow" : "px-2 py-0.5 rounded bg-slate-900 text-slate-300 font-bold text-[10px] border border-white/10";
+            }
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            const banner = document.getElementById('banner-text');
+            if(banner && translations[lang] && translations[lang]["banner-text"]) {
+                banner.innerText = translations[lang]["banner-text"];
+            }
         }
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
 
-        const particles = [];
-        const particleCount = Math.floor(window.innerWidth / 30);
-        const codeSymbols = ['{ }', '01', 'OMS', 'API', 'SQL', 'AI', 'C#', 'TS', 'AWS', 'FHIR', 'λ', '</>', 'BS', 'AIPG', 'REACT'];
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                if(icon) icon.className = "fa-solid fa-moon";
+            } else {
+                html.classList.add('dark');
+                if(icon) icon.className = "fa-solid fa-sun";
+            }
+        }
 
-        for (let i = 0; i < particleCount; i++) {
-            particles.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                vx: (Math.random() - 0.5) * 0.7,
-                vy: (Math.random() - 0.5) * 0.7,
-                size: Math.random() * 2.5 + 1,
-                symbol: codeSymbols[Math.floor(Math.random() * codeSymbols.length)],
-                opacity: Math.random() * 0.5 + 0.25
+        function switchTab(category) {
+            ['all', 'private', 'shared'].forEach(cat => {
+                const btn = document.getElementById(`btn-${cat}`);
+                if(btn) {
+                    if(cat === category) {
+                        btn.className = "px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-cyan-400 text-slate-950 transition shadow-lg whitespace-nowrap";
+                    } else {
+                        btn.className = "px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition whitespace-nowrap";
+                    }
+                }
+            });
+            document.querySelectorAll('#product-grid > div').forEach(card => {
+                if(category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
             });
         }
 
-        function animateCanvas() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        function openCheckout(productName, price) {
+            currentPrice = price;
+            const pName = document.getElementById('modal-product-name');
+            const pDisplay = document.getElementById('modal-price-display');
+            if(pName) pName.innerText = productName;
+            if(pDisplay) pDisplay.innerText = '৳' + price;
+            const modal = document.getElementById('checkout-modal');
+            if(modal) modal.classList.remove('hidden');
+        }
+
+        function closeCheckout() { 
+            const m = document.getElementById('checkout-modal');
+            if(m) m.classList.add('hidden'); 
+        }
+        
+        function closeSuccess() { 
+            const s = document.getElementById('success-modal');
+            if(s) s.classList.add('hidden'); 
+        }
+
+        async function submitOrder(e) {
+            e.preventDefault();
+            const orderData = {
+                name: document.getElementById('buyer-name').value,
+                email: document.getElementById('buyer-email').value,
+                phone: document.getElementById('buyer-phone').value,
+                trx: document.getElementById('buyer-trx').value.trim(),
+                product: document.getElementById('modal-product-name').innerText,
+                price: '৳' + currentPrice
+            };
+
+            try {
+                await fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(orderData)
+                });
+                closeCheckout();
+                const successModal = document.getElementById('success-modal');
+                if(successModal) successModal.classList.remove('hidden');
+            } catch (err) {
+                alert("Order submission failed. Please try via WhatsApp.");
+            }
+        }
+
+        async function trackOrder() {
+            const input = document.getElementById('track-input');
+            const val = input ? input.value.trim().toUpperCase() : '';
+            const resBox = document.getElementById('track-result');
+            if(!val) { alert("Please input a valid TrxID"); return; }
             
-            ctx.strokeStyle = 'rgba(16, 185, 129, 0.12)';
-            ctx.lineWidth = 1;
+            if(resBox) {
+                resBox.classList.remove('hidden');
+                resBox.innerHTML = `<div class="flex items-center space-x-2 text-cyan-500"><i class="fa-solid fa-spinner animate-spin"></i><span>Checking TrxID ${val} in database...</span></div>`;
+            }
+            
+            try {
+                const response = await fetch(`${WEB_APP_URL}?trx=${val}`);
+                const data = await response.json();
+                
+                if(!resBox) return;
+                if(data.found) {
+                    if(data.status === 'Verified') {
+                        resBox.innerHTML = `<div class="text-emerald-500 font-bold mb-1"><i class="fa-solid fa-circle-check"></i> Payment Verified & Processed</div><div class="text-xs opacity-80">Status: Access details dispatched to your email.</div>`;
+                    } else {
+                        resBox.innerHTML = `<div class="text-amber-400 font-bold mb-1"><i class="fa-solid fa-clock"></i> Payment Pending Verification</div><div class="text-xs opacity-80">Status: We are verifying your TrxID with bKash/Nagad logs.</div>`;
+                    }
+                } else {
+                    resBox.innerHTML = `<div class="text-rose-500 font-bold mb-1"><i class="fa-solid fa-circle-xmark"></i> TrxID Not Found</div><div class="text-xs opacity-80">Please check your Transaction ID or contact WhatsApp support.</div>`;
+                }
+            } catch (err) {
+                if(resBox) resBox.innerHTML = `<div class="text-rose-500 font-bold">Connection error. Please try again or message on WhatsApp.</div>`;
+            }
+        }
 
-            for (let i = 0; i < particles.length; i++) {
-                for (let j = i + 1; j < particles.length; j++) {
-                    const dx = particles[i].x - particles[j].x;
-                    const dy = particles[i].y - particles[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
+        let currentReviewSlide = 0;
+        const totalSlides = 5;
+        function updateReviewSlider() {
+            const slider = document.getElementById('review-slider');
+            if(slider) slider.style.transform = `translateX(-${currentReviewSlide * 100}%)`;
+        }
+        function nextReviewSlide() { currentReviewSlide = (currentReviewSlide + 1) % totalSlides; updateReviewSlider(); }
+        function prevReviewSlide() { currentReviewSlide = (currentReviewSlide - 1 + totalSlides) % totalSlides; updateReviewSlider(); }
+        setInterval(nextReviewSlide, 6000);
 
+        // Smooth Constellation Canvas
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas ? canvas.getContext('2d') : null;
+        let nodes = [];
+
+        function resizeCanvas() {
+            if(!canvas) return;
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initNodes();
+        }
+        window.addEventListener('resize', resizeCanvas);
+
+        class Node {
+            constructor() {
+                this.x = Math.random() * (canvas ? canvas.width : 1000);
+                this.y = Math.random() * (canvas ? canvas.height : 1000);
+                this.vx = (Math.random() - 0.5) * 0.8;
+                this.vy = (Math.random() - 0.5) * 0.8;
+                this.radius = Math.random() * 2 + 1.5;
+            }
+            update() {
+                if(!canvas) return;
+                this.x += this.vx;
+                this.y += this.vy;
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+            draw() {
+                if(!ctx) return;
+                ctx.fillStyle = 'rgba(0, 242, 254, 0.6)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initNodes() {
+            nodes = [];
+            if(!canvas) return;
+            let count = Math.max(65, Math.floor((canvas.width * canvas.height) / 11000));
+            for (let i = 0; i < count; i++) nodes.push(new Node());
+        }
+
+        function animateTechNetwork() {
+            if(!canvas || !ctx) return;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < nodes.length; i++) {
+                nodes[i].update();
+                nodes[i].draw();
+                for (let j = i + 1; j < nodes.length; j++) {
+                    let dx = nodes[i].x - nodes[j].x;
+                    let dy = nodes[i].y - nodes[j].y;
+                    let dist = Math.sqrt(dx * dx + dy * dy);
                     if (dist < 150) {
+                        ctx.strokeStyle = `rgba(0, 242, 254, ${Math.max(0, (1 - dist / 150) * 0.95)})`;
+                        ctx.lineWidth = 0.5;
                         ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.moveTo(nodes[i].x, nodes[i].y);
+                        ctx.lineTo(nodes[j].x, nodes[j].y);
                         ctx.stroke();
                     }
                 }
             }
-
-            particles.forEach(p => {
-                p.x += p.vx;
-                p.y += p.vy;
-
-                if (p.x < 0) p.x = canvas.width;
-                if (p.x > canvas.width) p.x = 0;
-                if (p.y < 0) p.y = canvas.height;
-                if (p.y > canvas.height) p.y = 0;
-
-                ctx.fillStyle = `rgba(16, 185, 129, ${p.opacity})`;
-                ctx.font = '11px JetBrains Mono, monospace';
-                ctx.fillText(p.symbol, p.x, p.y);
-
-                ctx.beginPath();
-                ctx.arc(p.x, p.y - 12, p.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(52, 211, 153, ${p.opacity * 0.8})`;
-                ctx.fill();
-            });
-
-            requestAnimationFrame(animateCanvas);
+            requestAnimationFrame(animateTechNetwork);
         }
-        animateCanvas();
-
-        function focusTerminal() {
-            document.getElementById('terminal-input').focus();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function scrollCerts(direction) {
-            const container = document.getElementById('certs-container');
-            const scrollAmount = 350;
-            if (direction === 'left') {
-                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-            } else {
-                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-            }
-        }
-
-        const terminalLogs = document.getElementById('terminal-logs');
-        const terminalInput = document.getElementById('terminal-input');
-
-        // Personal Knowledge Base Dataset
-        const portfolioData = {
-            about: [
-                "Name: Eshan Barua",
-                "Role: Founder & Lead Architect @ AIPG Systems & Studios",
-                "Expertise: Order Management Systems (OMS) for Dhaka & Chittagong Stock Exchanges, Full-Stack Architecture, and Generative AI Workflows.",
-                "Venture: Founder & Lead Architect of AIPG (Adbhik Innovation & Product Group) featuring AIPG Systems & Studios and Vortex AI Studio."
-            ],
-            vortex: [
-                "Vortex AI Studio — AI Subscriptions & Digital Services",
-                "Associated with AIPG. A local-first digital services platform for Bangladesh providing verified AI subscriptions (ChatGPT Plus, Claude Pro, Gemini Advanced, xAI Grok, Perplexity Pro, Midjourney, ElevenLabs), NVMe Web Hosting, .COM Domains, and Certera SSL Certificates.",
-                "Payments: bKash & Nagad with 5-15 minute automated activation and WhatsApp/Telegram support.",
-                "Website: https://vortex-ai-studio-eight.vercel.app/",
-                "Facebook: https://facebook.com/vortexaistudio"
-            ],
-            xpert: [
-                "Employment: Software Engineer at Xpert Fintech Ltd. (Aug 2023 - Present)",
-                "Responsibilities: Providing L2/L3 production support for capital market Order Management Systems (OMS), high-throughput trade routing, and database verification."
-            ],
-            education: [
-                "University: North South University (B.Sc. in Computer Science & Engineering)",
-                "College: Notre Dame College (HSC Science, Assistant General Secretary of NDC Science Club)",
-                "School: KPB School & College (SSC Science, Founder panel of KPBSC Science Club)"
-            ],
-            research: [
-                "IEEE Publications (2021):",
-                "1. Development of Web-Based System for Essential Services During the COVID-19 Pandemic (ICCIT)",
-                "2. Bid & Buy: An Effective Online-Based Platform for Client and Vendor (ICCMC)"
-            ],
-            family: [
-                "Family & Personal Notes:",
-                "- Married to Bornomala (বর্নমালা)",
-                "- Proud father of a son",
-                "- Maternal grandmother: Din Din (দিন দিন)",
-                "- Pet cockatiels: Sandesh (সন্দেশ) and Mithai (মিঠাই)"
-            ],
-            roles: [
-                "Target Open Roles:",
-                "1. AI Engineer (LLM Workflows, Prompt Engineering, Agent Automation)",
-                "2. Senior Software Engineer (Full-Stack, ASP.NET Core, React, OMS)",
-                "3. Product / Project Manager (AIPG Ecosystem)"
-            ],
-            stack: [
-                "Languages & Frameworks: C#, Python, Java, ASP.NET Core, TypeScript, Node.js, React, Tailwind CSS",
-                "Databases: SQL Server, PostgreSQL, Redis, SQLite",
-                "AI & Automation: Google AI Studio, Claude Code CLI, Gemini, Suno AI, ElevenLabs, Playwright"
-            ],
-            contact: [
-                "Email: baruaeshan333@gmail.com",
-                "Location: Dhaka, Bangladesh",
-                "LinkedIn: https://www.linkedin.com/in/eshan01"
-            ]
-        };
-
-        function handleTerminalCommand(e) {
-            e.preventDefault();
-            const rawCmd = terminalInput.value.trim().toLowerCase();
-            if (!rawCmd) return;
-
-            let response = "";
-
-            if (rawCmd === 'help') {
-                response = "Available Knowledge Base Commands:\n  - about      : Summary of Eshan Barua & AIPG\n  - vortex     : Details on Vortex AI Studio & subscriptions\n  - xpert      : Details on Xpert Fintech & OMS work\n  - education  : North South University & academic background\n  - research   : IEEE indexed publications\n  - family     : Family & personal background details\n  - roles      : Target career & engineering roles\n  - stack      : Technical arsenal & tools\n  - contact    : Direct email and location\n  - clear      : Clear terminal screen";
-            } else if (rawCmd === 'about' || rawCmd === 'whoami' || rawCmd === 'eshan') {
-                response = portfolioData.about.join("\n");
-            } else if (rawCmd.includes('vortex') || rawCmd.includes('subscription') || rawCmd.includes('ai studio')) {
-                response = portfolioData.vortex.join("\n");
-            } else if (rawCmd.includes('xpert') || rawCmd.includes('job') || rawCmd.includes('work')) {
-                response = portfolioData.xpert.join("\n");
-            } else if (rawCmd.includes('edu') || rawCmd.includes('north south') || rawCmd.includes('nsu')) {
-                response = portfolioData.education.join("\n");
-            } else if (rawCmd.includes('research') || rawCmd.includes('ieee') || rawCmd.includes('publication')) {
-                response = portfolioData.research.join("\n");
-            } else if (rawCmd.includes('family') || rawCmd.includes('wife') || rawCmd.includes('son') || rawCmd.includes('pet')) {
-                response = portfolioData.family.join("\n");
-            } else if (rawCmd === 'roles' || rawCmd.includes('hire')) {
-                response = portfolioData.roles.join("\n");
-            } else if (rawCmd === 'stack' || rawCmd.includes('tech') || rawCmd.includes('skills')) {
-                response = portfolioData.stack.join("\n");
-            } else if (rawCmd === 'contact' || rawCmd.includes('email')) {
-                response = portfolioData.contact.join("\n");
-            } else if (rawCmd === 'clear') {
-                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.6 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
-                terminalInput.value = '';
-                return;
-            } else {
-                response = `Found no exact match for "${rawCmd}". Type "help" to explore available knowledge base topics or ask about vortex, xpert, education, research, family, or stack.`;
-            }
-
-            const cmdDiv = document.createElement('div');
-            cmdDiv.className = 'text-emerald-400 font-semibold';
-            cmdDiv.textContent = "> " + terminalInput.value;
-            terminalLogs.appendChild(cmdDiv);
-
-            const resDiv = document.createElement('div');
-            resDiv.className = 'text-slate-100 whitespace-pre-wrap leading-relaxed mt-1 mb-2 bg-white/[0.06] p-3 rounded-lg border border-white/10 shadow-md';
-            resDiv.textContent = response;
-            terminalLogs.appendChild(resDiv);
-
-            terminalLogs.scrollTop = terminalLogs.scrollHeight;
-            terminalInput.value = '';
-        }
+        resizeCanvas();
+        animateTechNetwork();
     </script>
 </body>
 </html>
