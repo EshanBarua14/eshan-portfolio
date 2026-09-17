@@ -35,56 +35,13 @@
         }
 
         /* Section-wise strict uniform card sizing */
-        .hub-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 240px;
-        }
-
-        .tech-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 200px;
-        }
-
-        .exp-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 320px;
-        }
-
-        .project-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 340px;
-        }
-
-        .edu-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 280px;
-        }
-
-        .cert-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 230px;
-            width: 320px;
-            flex-shrink: 0;
-        }
-
-        .research-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 200px;
-        }
+        .hub-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 240px; }
+        .tech-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; }
+        .exp-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 320px; }
+        .project-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 340px; }
+        .edu-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 280px; }
+        .cert-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 230px; width: 320px; flex-shrink: 0; }
+        .research-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; }
 
         .glass-button {
             background: rgba(255, 255, 255, 0.08);
@@ -214,7 +171,7 @@
                     </div>
 
                     <div id="terminal-logs" class="p-5 h-[340px] overflow-y-auto font-mono text-xs space-y-3 text-slate-300">
-                        <div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.5 ONLINE</div>
+                        <div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.6 ONLINE</div>
                         <div>Ask anything about my background, career, education, or Vortex AI Studio!</div>
                         <div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> or <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">vortex</span> to inspect services...</div>
                     </div>
@@ -812,7 +769,7 @@
             </div>
         </section>
 
-        <!-- Slideable & Clickable Certifications Section (All 38 Certifications) -->
+        <!-- Slideable & Clickable Certifications Section (All 38 Certifications with Direct academy.claude.com and LinkedIn/PMI Links) -->
         <section class="mt-20">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
                 <div class="flex items-center space-x-3">
@@ -846,7 +803,7 @@
                         <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Introduction to Model Context Protocol</h3>
                         <p class="text-xs text-slate-300 font-mono mb-3">ID: 9a277d7a87d729e12358ddf8b3057bcf</p>
                     </div>
-                    <a href="https://support.anthropic.com/en/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                    <a href="https://academy.claude.com/verify/9a277d7a87d729e12358ddf8b3057bcf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
                         <span>Verify Credential ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
@@ -861,7 +818,7 @@
                         <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Claude Code in Action</h3>
                         <p class="text-xs text-slate-300 font-mono mb-3">ID: d0bc85d7c29b22f399f3a1f6ca36dcc1</p>
                     </div>
-                    <a href="https://support.anthropic.com/en/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                    <a href="https://academy.claude.com/verify/d0bc85d7c29b22f399f3a1f6ca36dcc1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
                         <span>Verify Credential ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
@@ -876,12 +833,72 @@
                         <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Claude Platform 101</h3>
                         <p class="text-xs text-slate-300 font-mono mb-3">ID: b21d7e2d6e44881181c8146f6d1b7b96</p>
                     </div>
-                    <a href="https://support.anthropic.com/en/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                    <a href="https://academy.claude.com/verify/b21d7e2d6e44881181c8146f6d1b7b96" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
                         <span>Verify Credential ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
                 <!-- Cert 4 -->
+                <div class="cert-card glass-panel rounded-2xl p-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
+                            <span class="text-xs font-mono text-slate-300">Sep 2026</span>
+                        </div>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Introduction to Claude Cowork</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 0ce41199eabe11062114477b6fd0564d</p>
+                    </div>
+                    <a href="https://academy.claude.com/verify/0ce41199eabe11062114477b6fd0564d" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Credential ID</span>
+                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+                <!-- Cert 5 -->
+                <div class="cert-card glass-panel rounded-2xl p-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
+                            <span class="text-xs font-mono text-slate-300">Sep 2026</span>
+                        </div>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Claude Code 101</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 4777cb3bb06f16bd17c9e938c3dc2524</p>
+                    </div>
+                    <a href="https://academy.claude.com/verify/4777cb3bb06f16bd17c9e938c3dc2524" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Credential ID</span>
+                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+                <!-- Cert 6 -->
+                <div class="cert-card glass-panel rounded-2xl p-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
+                            <span class="text-xs font-mono text-slate-300">Sep 2026</span>
+                        </div>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Claude 101</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 89e4e552a6792d80f94fe6c159c27794</p>
+                    </div>
+                    <a href="https://academy.claude.com/verify/89e4e552a6792d80f94fe6c159c27794" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Credential ID</span>
+                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+                <!-- Cert 7 -->
+                <div class="cert-card glass-panel rounded-2xl p-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Canva</span>
+                            <span class="text-xs font-mono text-slate-300">Aug 2026</span>
+                        </div>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Graphic Design Essentials</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 791f89</p>
+                    </div>
+                    <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Credential</span>
+                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+                <!-- Cert 8 -->
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
@@ -896,7 +913,7 @@
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
-                <!-- Cert 5 -->
+                <!-- Cert 9 -->
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
@@ -911,7 +928,7 @@
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
-                <!-- Cert 6 -->
+                <!-- Cert 10 -->
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
@@ -919,70 +936,10 @@
                             <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
                         <h3 class="text-sm font-bold text-white mb-2 leading-snug">React Essential Training & PWA Architecture</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 7ef00e3a60933da10a209eb</p>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 7ef00e3a...2d3a4</p>
                     </div>
-                    <a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                    <a href="https://www.linkedin.com/learning/verify/7ef00e3a60933da10a209eb5591ebac976eb2c2db5176468b61368d74272d3a4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
                         <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 7 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">AWS / LinkedIn</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Building Serverless Applications in AWS</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: d855a8a85adf367c66</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 8 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM / Coursera</span>
-                            <span class="text-xs font-mono text-slate-300">May 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to DevOps & Software Engineering</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 21V9HHM3BGI1</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/21V9HHM3BGI1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 9 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Google Cloud</span>
-                            <span class="text-xs font-mono text-slate-300">Apr 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Google Cloud Digital Leader Certification</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: GCP-DL-883921</p>
-                    </div>
-                    <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 10 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Microsoft</span>
-                            <span class="text-xs font-mono text-slate-300">Mar 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: MS-AZ900-5512</p>
-                    </div>
-                    <a href="https://learn.microsoft.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -990,14 +947,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Microsoft</span>
-                            <span class="text-xs font-mono text-slate-300">Mar 2025</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Microsoft Certified: Azure AI Fundamentals (AI-900)</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: MS-AI900-3341</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">React: Building Progressive Web Apps (PWAs)</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: e47a38d051603...8ec872</p>
                     </div>
-                    <a href="https://learn.microsoft.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/e47a38d051603c9644edb7e278220238ecb67eb649e2108ed971f53c718ec872" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1005,14 +962,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">PostgreSQL</span>
-                            <span class="text-xs font-mono text-slate-300">Feb 2025</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Advanced PostgreSQL Database Administration & Tuning</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: PG-ADV-9902</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">NoSQL Essential Training</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 59a8bf9761fe...87c56aac</p>
                     </div>
-                    <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/59a8bf9761fe0b630865b2c3d3b7c530a5fd10a2fc40207de73a833a87c56aac" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1020,14 +977,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Linux Foundation</span>
-                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to Kubernetes & Container Orchestration</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: LF-K8S-4412</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Creating API Documentation</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 509d969060ae...6989c8e2</p>
                     </div>
-                    <a href="https://www.linuxfoundation.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/509d969060ae0f552785f4780b47bc9d66917f46f38f017cb5c066936989c8e2" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1035,14 +992,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Docker Inc.</span>
-                            <span class="text-xs font-mono text-slate-300">Dec 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Docker Certified Associate & Container Security</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: DOC-CA-7718</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Slack Essential Training</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 5c8d79a83417...be2d973</p>
                     </div>
-                    <a href="https://www.docker.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/5c8d79a83417e0c0859c3d71e19f3479c1f2c01e5e9a23ece11a90fe4be2d973" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1050,14 +1007,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Scrum.org</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">AWS / LinkedIn</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Professional Scrum Master I (PSM I)</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: PSM-I-88219</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Building Serverless Applications in AWS</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: d855a8a85adf...fcc67c66</p>
                     </div>
-                    <a href="https://www.scrum.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/d855a8a85adf364a6b549d68e99a7142e436f8006bae58410610bf17fcc67c66" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1065,14 +1022,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Postman</span>
-                            <span class="text-xs font-mono text-slate-300">Oct 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Postman API Fundamentals Student Expert</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: POST-API-3321</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to NoSQL</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: cb0c43d7978b...35d50bb</p>
                     </div>
-                    <a href="https://www.postman.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/cb0c43d7978b96c4c477f211c07e08a6ce7b5b5c871769f3ef3d216fa35d50bb" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1080,14 +1037,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">MongoDB Inc.</span>
-                            <span class="text-xs font-mono text-slate-300">Sep 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">MongoDB Certified Developer Associate</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: MDB-DEV-6612</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Creating a Responsive Web Design</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: da11ace5a653...1966c0fe</p>
                     </div>
-                    <a href="https://university.mongodb.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/da11ace5a653ecf8e61d5d0418195eb87d2471147b707a0dcf0dc6871966c0fe" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1095,14 +1052,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Red Hat</span>
-                            <span class="text-xs font-mono text-slate-300">Aug 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">PMI</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Red Hat OpenShift Administration Basics</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: RH-OS-1102</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Learning Confluence</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 737ac2716e17...2fd9a3dd</p>
                     </div>
-                    <a href="https://www.redhat.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/737ac2716e175dc515a616106c9ef43a30b785504c13a3ff07ad00512fd9a3dd" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1110,14 +1067,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / DeepLearning.AI</span>
-                            <span class="text-xs font-mono text-slate-300">Jul 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">AI for Everyone & LLM Engineering Specialization</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: DL-AI-5541</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Learning Jira: Sprints, Bugs & Tracking</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 7934c14c519e...06f35ac102</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/7934c14c519ec4c63539d719a2258580328d5586e1651fdb48d87c06f35ac102" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1125,14 +1082,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Stanford</span>
-                            <span class="text-xs font-mono text-slate-300">Jun 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Machine Learning Specialization: Supervised Learning</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: ML-STAN-8832</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Prompt Engineering: How to Talk to the AIs</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 9491334dece3...22435e8ffd</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/9491334dece355fdd5324fde631a645b017ce5d82f3311c18e0c0622435e8ffd" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1140,14 +1097,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Oracle</span>
-                            <span class="text-xs font-mono text-slate-300">May 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Oracle Certified Associate: Java SE 8 Programmer</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: ORC-JAVA-441</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Automated Software Refactoring with OpenRewrite</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: d644caf43f17...9f4cc432f</p>
                     </div>
-                    <a href="https://education.oracle.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/d644caf43f179325727aad3af63162d1a40497242b1e19216a1d4d9f4cc432f" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1155,14 +1112,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Cisco</span>
-                            <span class="text-xs font-mono text-slate-300">Apr 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">CompTIA</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Cisco Networking Academy: Introduction to Cybersecurity</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: CSCO-SEC-991</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Agile Software Development</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 8ce04fc4ba39...3860a4b67</p>
                     </div>
-                    <a href="https://www.cisco.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/8ce04fc4ba39d92cf8871b403c3b242d61684236236ba4831d35d943860a4b67" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1170,14 +1127,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Meta</span>
-                            <span class="text-xs font-mono text-slate-300">Mar 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Meta Front-End Developer Professional Certificate</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: META-FE-772</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">WordPress: Mastering Full Site Editing</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 83b0b5486dea...26a8bbf</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/83b0b5486dea6b4bce592c940b334be9daa66f2eb7f222a8a4a98b24c26a8bbf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1185,14 +1142,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Meta</span>
-                            <span class="text-xs font-mono text-slate-300">Feb 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Meta Back-End Developer Professional Certificate</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: META-BE-331</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Canva for Web and Digital Design Projects</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 067e3b0dd553...702a3fa3e5</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/067e3b0dd55347a16ddb2a30a843a55adf55cec587218ab8827afc702a3fa3e5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1200,14 +1157,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Google</span>
-                            <span class="text-xs font-mono text-slate-300">Jan 2024</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">PMI</span>
+                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Google IT Support Professional Certificate</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: G-IT-554</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Communicating with Confidence</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 9f27d6f9517c...4fecd0a0f78</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.linkedin.com/learning/verify/9f27d6f9517c00a09cbcda11c5290027586f498572e228dca05db4fecd0a0f78" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Certificate</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1215,14 +1172,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Google</span>
-                            <span class="text-xs font-mono text-slate-300">Dec 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera</span>
+                            <span class="text-xs font-mono text-slate-300">Jun 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Google Data Analytics Professional Certificate</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: G-DA-882</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to Selenium</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: KS26F7UJPVTL</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/KS26F7UJPVTL" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1230,14 +1187,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">GitHub</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Meta</span>
+                            <span class="text-xs font-mono text-slate-300">Jun 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">GitHub Foundations & Actions Workflow Specialist</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: GH-FND-112</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to Front-End Development</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: DN2MXOVCAUY1</p>
                     </div>
-                    <a href="https://github.skills.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/DN2MXOVCAUY1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1245,14 +1202,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">PostgreSQL</span>
-                            <span class="text-xs font-mono text-slate-300">Oct 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM</span>
+                            <span class="text-xs font-mono text-slate-300">May 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">PostgreSQL for Everybody Specialization</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: PG-4ALL-663</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to Business Analysis</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: CXX8MIOY02E3</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/CXX8MIOY02E3" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1260,14 +1217,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Node.js Foundation</span>
-                            <span class="text-xs font-mono text-slate-300">Sep 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM</span>
+                            <span class="text-xs font-mono text-slate-300">May 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Node.js Application Development & Security</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: NODE-DEV-994</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to DevOps</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 21V9HHM3BGI1</p>
                     </div>
-                    <a href="https://openjsf.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/21V9HHM3BGI1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1275,14 +1232,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">ASP.NET</span>
-                            <span class="text-xs font-mono text-slate-300">Aug 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM</span>
+                            <span class="text-xs font-mono text-slate-300">Apr 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">ASP.NET Core Enterprise Architecture & Web APIs</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: ASP-COR-771</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Developing Websites and Front-Ends with Bootstrap</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: R5ZRZS4CNH6B</p>
                     </div>
-                    <a href="https://learn.microsoft.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/R5ZRZS4CNH6B" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1290,14 +1247,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Python Institute</span>
-                            <span class="text-xs font-mono text-slate-300">Jul 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Johns Hopkins</span>
+                            <span class="text-xs font-mono text-slate-300">Apr 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Certified Associate in Python Programming (PCAP)</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: PCAP-31-03</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">HTML, CSS, and Javascript for Web Developers</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: U90PELINTPU1</p>
                     </div>
-                    <a href="https://pythoninstitute.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/U90PELINTPU1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1305,14 +1262,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IEEE</span>
-                            <span class="text-xs font-mono text-slate-300">Jun 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Google</span>
+                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">IEEE Computer Society: Software Engineering Methodologies</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: IEEE-SE-442</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">The Bits and Bytes of Computer Networking</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 1XMVIKXDAXKK</p>
                     </div>
-                    <a href="https://www.ieee.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/1XMVIKXDAXKK" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1320,14 +1277,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / IBM</span>
-                            <span class="text-xs font-mono text-slate-300">May 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Knowledge Accelerators</span>
+                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">IBM Full Stack Software Developer Certificate</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: IBM-FS-331</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">From Excel to Power BI</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: L38R8S0D41J8</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/L38R8S0D41J8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1335,14 +1292,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Udemy</span>
-                            <span class="text-xs font-mono text-slate-300">Apr 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">University of Leeds</span>
+                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Advanced TypeScript & Design Patterns in Enterprise</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: UDM-TS-881</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Foundations of Software Testing and Validation</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 7W4PEFZZ0COT</p>
                     </div>
-                    <a href="https://www.udemy.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/7W4PEFZZ0COT" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1350,14 +1307,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Udemy</span>
-                            <span class="text-xs font-mono text-slate-300">Mar 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera</span>
+                            <span class="text-xs font-mono text-slate-300">Feb 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Docker & Kubernetes: The Practical Guide</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: UDM-DK-552</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Business Analysis & Process Management</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: T6CXJND9DE3Y</p>
                     </div>
-                    <a href="https://www.udemy.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/T6CXJND9DE3Y" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1365,14 +1322,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Feb 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM</span>
+                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Advanced C# Design Patterns & Memory Management</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: LI-CSH-992</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to Software Engineering</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 15L2O2PLATIY</p>
                     </div>
-                    <a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/15L2O2PLATIY" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1380,14 +1337,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera</span>
-                            <span class="text-xs font-mono text-slate-300">Jan 2023</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">BITM</span>
+                            <span class="text-xs font-mono text-slate-300">May 2024</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Agile with Atlassian Jira & Confluence Workflow</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: AGL-JIRA-441</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Microsoft ASP .net MVC Core with SQL Server 2019</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">Issuer: BITM</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.bitm.org.bd" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify BITM Portal</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1395,14 +1352,14 @@
                 <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera</span>
-                            <span class="text-xs font-mono text-slate-300">Dec 2022</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Google</span>
+                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
                         </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Cybersecurity Fundamentals & Network Defense</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: CYBER-DEF-101</p>
+                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Technical Support Fundamentals</h3>
+                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 70UTKWQWT6DL</p>
                     </div>
-                    <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
+                    <a href="https://www.coursera.org/verify/70UTKWQWT6DL" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
+                        <span>Verify Coursera ID</span>
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </a>
                 </div>
@@ -1630,7 +1587,7 @@
             } else if (rawCmd === 'contact' || rawCmd.includes('email')) {
                 response = portfolioData.contact.join("\n");
             } else if (rawCmd === 'clear') {
-                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.4 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
+                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.6 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
                 terminalInput.value = '';
                 return;
             } else {
