@@ -34,19 +34,56 @@
             transform: translateY(-3px);
         }
 
-        /* Section-specific uniform card flex setups */
-        .cert-card {
+        /* Section-wise strict uniform card sizing */
+        .hub-card {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 230px !important;
+            min-height: 240px;
+        }
+
+        .tech-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 200px;
+        }
+
+        .exp-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 320px;
         }
 
         .project-card {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 100% !important;
+            min-height: 340px;
+        }
+
+        .edu-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 280px;
+        }
+
+        .cert-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 230px;
+            width: 320px;
+            flex-shrink: 0;
+        }
+
+        .research-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 200px;
         }
 
         .glass-button {
@@ -177,7 +214,7 @@
                     </div>
 
                     <div id="terminal-logs" class="p-5 h-[340px] overflow-y-auto font-mono text-xs space-y-3 text-slate-300">
-                        <div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.4 ONLINE</div>
+                        <div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.5 ONLINE</div>
                         <div>Ask anything about my background, career, education, or Vortex AI Studio!</div>
                         <div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> or <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">vortex</span> to inspect services...</div>
                     </div>
@@ -204,7 +241,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="hub-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex items-center justify-between mb-3">
                             <span class="text-[10px] font-mono px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/35">Direct Channel</span>
@@ -223,7 +260,7 @@
                     </div>
                 </div>
 
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="hub-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex items-center justify-between mb-3">
                             <span class="text-[10px] font-mono px-2 py-0.5 rounded-md bg-cyan-500/15 text-cyan-300 border border-cyan-500/35">Education</span>
@@ -243,7 +280,7 @@
                     </div>
                 </div>
 
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="hub-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex items-center justify-between mb-3">
                             <span class="text-[10px] font-mono px-2 py-0.5 rounded-md bg-purple-500/15 text-purple-300 border border-purple-500/35">AIPG Ecosystem</span>
@@ -279,7 +316,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
                 <!-- Languages & Frameworks -->
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="tech-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex items-center space-x-2 text-emerald-400 font-mono text-xs mb-3">
                             <i data-lucide="code" class="w-4 h-4"></i>
@@ -300,7 +337,7 @@
                 </div>
 
                 <!-- Databases & Systems -->
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="tech-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex items-center space-x-2 text-emerald-400 font-mono text-xs mb-3">
                             <i data-lucide="database" class="w-4 h-4"></i>
@@ -317,7 +354,7 @@
                 </div>
 
                 <!-- AI Tools & Autonomous Workflows -->
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="tech-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex items-center space-x-2 text-emerald-400 font-mono text-xs mb-3">
                             <i data-lucide="cpu" class="w-4 h-4"></i>
@@ -370,7 +407,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
                 <!-- 1. Founder & Lead Architect @ AIPG -->
-                <div class="glass-panel rounded-2xl p-6 group flex flex-col justify-between">
+                <div class="exp-card glass-panel rounded-2xl p-6 group">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <div>
@@ -398,7 +435,7 @@
                 </div>
 
                 <!-- 2. Software Engineer @ Xpert Fintech Ltd. -->
-                <div class="glass-panel rounded-2xl p-6 group flex flex-col justify-between">
+                <div class="exp-card glass-panel rounded-2xl p-6 group">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <div>
@@ -426,7 +463,7 @@
                 </div>
 
                 <!-- 3. System Engineer (RAN) / IT Engineer -->
-                <div class="glass-panel rounded-2xl p-6 group flex flex-col justify-between">
+                <div class="exp-card glass-panel rounded-2xl p-6 group">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <div>
@@ -454,7 +491,7 @@
                 </div>
 
                 <!-- 4. Information Technology Executive -->
-                <div class="glass-panel rounded-2xl p-6 group flex flex-col justify-between">
+                <div class="exp-card glass-panel rounded-2xl p-6 group">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <div>
@@ -713,7 +750,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="edu-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">University</span>
@@ -733,7 +770,7 @@
                     </div>
                 </div>
 
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="edu-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Higher Secondary</span>
@@ -753,7 +790,7 @@
                     </div>
                 </div>
 
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="edu-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Secondary</span>
@@ -800,7 +837,7 @@
 
             <div id="certs-container" class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth pb-4 items-stretch">
                 <!-- Cert 1 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
@@ -815,7 +852,7 @@
                     </a>
                 </div>
                 <!-- Cert 2 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
@@ -830,7 +867,7 @@
                     </a>
                 </div>
                 <!-- Cert 3 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
@@ -845,7 +882,7 @@
                     </a>
                 </div>
                 <!-- Cert 4 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Project Management Institute</span>
@@ -860,7 +897,7 @@
                     </a>
                 </div>
                 <!-- Cert 5 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Project Management Institute</span>
@@ -875,7 +912,7 @@
                     </a>
                 </div>
                 <!-- Cert 6 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
@@ -890,7 +927,7 @@
                     </a>
                 </div>
                 <!-- Cert 7 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">AWS / LinkedIn</span>
@@ -905,7 +942,7 @@
                     </a>
                 </div>
                 <!-- Cert 8 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM / Coursera</span>
@@ -920,7 +957,7 @@
                     </a>
                 </div>
                 <!-- Cert 9 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Google Cloud</span>
@@ -935,7 +972,7 @@
                     </a>
                 </div>
                 <!-- Cert 10 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Microsoft</span>
@@ -950,7 +987,7 @@
                     </a>
                 </div>
                 <!-- Cert 11 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Microsoft</span>
@@ -965,7 +1002,7 @@
                     </a>
                 </div>
                 <!-- Cert 12 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">PostgreSQL</span>
@@ -980,7 +1017,7 @@
                     </a>
                 </div>
                 <!-- Cert 13 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Linux Foundation</span>
@@ -995,7 +1032,7 @@
                     </a>
                 </div>
                 <!-- Cert 14 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Docker Inc.</span>
@@ -1010,7 +1047,7 @@
                     </a>
                 </div>
                 <!-- Cert 15 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Scrum.org</span>
@@ -1025,7 +1062,7 @@
                     </a>
                 </div>
                 <!-- Cert 16 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Postman</span>
@@ -1040,7 +1077,7 @@
                     </a>
                 </div>
                 <!-- Cert 17 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">MongoDB Inc.</span>
@@ -1055,7 +1092,7 @@
                     </a>
                 </div>
                 <!-- Cert 18 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Red Hat</span>
@@ -1070,7 +1107,7 @@
                     </a>
                 </div>
                 <!-- Cert 19 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / DeepLearning.AI</span>
@@ -1085,7 +1122,7 @@
                     </a>
                 </div>
                 <!-- Cert 20 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Stanford</span>
@@ -1100,7 +1137,7 @@
                     </a>
                 </div>
                 <!-- Cert 21 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Oracle</span>
@@ -1115,7 +1152,7 @@
                     </a>
                 </div>
                 <!-- Cert 22 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Cisco</span>
@@ -1130,7 +1167,7 @@
                     </a>
                 </div>
                 <!-- Cert 23 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Meta</span>
@@ -1145,7 +1182,7 @@
                     </a>
                 </div>
                 <!-- Cert 24 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Meta</span>
@@ -1160,7 +1197,7 @@
                     </a>
                 </div>
                 <!-- Cert 25 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Google</span>
@@ -1175,7 +1212,7 @@
                     </a>
                 </div>
                 <!-- Cert 26 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / Google</span>
@@ -1190,7 +1227,7 @@
                     </a>
                 </div>
                 <!-- Cert 27 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">GitHub</span>
@@ -1205,7 +1242,7 @@
                     </a>
                 </div>
                 <!-- Cert 28 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">PostgreSQL</span>
@@ -1220,7 +1257,7 @@
                     </a>
                 </div>
                 <!-- Cert 29 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Node.js Foundation</span>
@@ -1235,7 +1272,7 @@
                     </a>
                 </div>
                 <!-- Cert 30 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">ASP.NET</span>
@@ -1250,7 +1287,7 @@
                     </a>
                 </div>
                 <!-- Cert 31 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Python Institute</span>
@@ -1265,7 +1302,7 @@
                     </a>
                 </div>
                 <!-- Cert 32 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IEEE</span>
@@ -1280,7 +1317,7 @@
                     </a>
                 </div>
                 <!-- Cert 33 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera / IBM</span>
@@ -1295,7 +1332,7 @@
                     </a>
                 </div>
                 <!-- Cert 34 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Udemy</span>
@@ -1310,7 +1347,7 @@
                     </a>
                 </div>
                 <!-- Cert 35 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Udemy</span>
@@ -1325,7 +1362,7 @@
                     </a>
                 </div>
                 <!-- Cert 36 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
@@ -1340,7 +1377,7 @@
                     </a>
                 </div>
                 <!-- Cert 37 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera</span>
@@ -1355,7 +1392,7 @@
                     </a>
                 </div>
                 <!-- Cert 38 -->
-                <div class="min-w-[320px] max-w-[320px] cert-card glass-panel rounded-2xl p-6 shrink-0">
+                <div class="cert-card glass-panel rounded-2xl p-6">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera</span>
@@ -1385,7 +1422,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="research-card glass-panel rounded-2xl p-6">
                     <div>
                         <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">ICCIT 2021</span>
                         <h3 class="text-base font-bold text-white mt-3.5 mb-2.5">Development of Web-Based System for Essential Services During the COVID-19 Pandemic</h3>
@@ -1394,7 +1431,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                <div class="research-card glass-panel rounded-2xl p-6">
                     <div>
                         <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">ICCMC 2021</span>
                         <h3 class="text-base font-bold text-white mt-3.5 mb-2.5">Bid & Buy: An Effective Online-Based Platform for Client and Vendor</h3>
