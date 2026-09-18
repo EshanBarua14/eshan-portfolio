@@ -171,7 +171,7 @@
                     </div>
 
                     <div id="terminal-logs" class="p-5 h-[340px] overflow-y-auto font-mono text-xs space-y-3 text-slate-300">
-                        <div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.7 ONLINE</div>
+                        <div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.8 ONLINE</div>
                         <div>Ask anything about my background, career, education, or Vortex AI Studio!</div>
                         <div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> or <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">vortex</span> to inspect services...</div>
                     </div>
@@ -350,7 +350,7 @@
             </div>
         </section>
 
-        <!-- Enterprise Experience Section (AIPG First) -->
+        <!-- Enterprise Experience Section (AIPG First with Official Web Link) -->
         <section id="experience" class="mt-20">
             <div class="flex items-center space-x-3 mb-6">
                 <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400">
@@ -363,13 +363,18 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-                <!-- 1. Founder & Lead Architect @ AIPG -->
-                <div class="exp-card glass-panel rounded-2xl p-6 group">
+                <!-- 1. Founder & Lead Architect @ AIPG (With Official Web Link) -->
+                <div class="exp-card glass-panel rounded-2xl p-6 group flex flex-col justify-between">
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <div>
                                 <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Founder & Lead Architect</h3>
-                                <p class="text-sm font-medium text-slate-300">AIPG (Adbhik Innovation & Product Group)</p>
+                                <p class="text-sm font-medium text-slate-300">
+                                    <a href="https://aipgbd-nexus.vercel.app/founder" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline inline-flex items-center space-x-1">
+                                        <span>AIPG (Adbhik Innovation & Product Group)</span>
+                                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                                    </a>
+                                </p>
                             </div>
                             <span class="text-xs font-mono px-3 py-1 rounded-full bg-white/10 text-slate-300 border border-white/15">
                                 Jun 2023 - Present
@@ -769,7 +774,7 @@
             </div>
         </section>
 
-        <!-- Slideable & Clickable Certifications Section (All 38 Certifications with Direct academy.claude.com and LinkedIn/PMI Links) -->
+        <!-- Slideable & Clickable Certifications Section (All 38 Certifications with Direct Verification Links) -->
         <section class="mt-20">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
                 <div class="flex items-center space-x-3">
@@ -1539,7 +1544,7 @@
                 "- Married to Bornomala (বর্নমালা)",
                 "- Proud father of a son",
                 "- Maternal grandmother: Din Din (দিন দিন)",
-                "- Pet cockatiels: Sandesh (সন্দেশ) and Mithai (মিঠাই)"
+                "- Pet cockatiels: Sandesh (সন্দেশ) and মিঠাই (মিঠাই)"
             ],
             roles: [
                 "Target Open Roles:",
@@ -1587,7 +1592,7 @@
             } else if (rawCmd === 'contact' || rawCmd.includes('email')) {
                 response = portfolioData.contact.join("\n");
             } else if (rawCmd === 'clear') {
-                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.6 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
+                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.8 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
                 terminalInput.value = '';
                 return;
             } else {
