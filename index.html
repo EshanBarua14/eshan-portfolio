@@ -671,8 +671,8 @@
                     </div>
                 </div>
 
-                <!-- AIPGBD Nexus Project Card (Fixed uniform sizing) -->
-                <div class="project-card glass-panel rounded-2xl p-6 lg:col-span-3">
+                <!-- AIPGBD Nexus Project Card (Now same sized as Metro SMS & placed beside it) -->
+                <div class="project-card glass-panel rounded-2xl p-6">
                     <div>
                         <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Central Digital Hub</span>
                         <h3 class="text-base font-bold text-white mt-3 mb-2">AIPGBD Nexus v7</h3>
@@ -680,8 +680,8 @@
                             Central digital hub connecting AIPG Studios (cinematic AI video & voiceover) and AIPG Systems (enterprise React + ASP.NET software solutions) with bilingual support and 7-layer interactive backgrounds.
                         </p>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pt-3 border-t border-white/10 gap-4 mt-auto">
-                        <div class="flex flex-wrap gap-1.5">
+                    <div class="mt-auto">
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 mb-3.5">
                             <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">React 18</span>
                             <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Supabase</span>
                             <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">ASP.NET Core</span>
@@ -1593,7 +1593,7 @@
             } else if (rawCmd === 'contact' || rawCmd.includes('email')) {
                 response = portfolioData.contact.join("\n");
             } else if (rawCmd === 'clear') {
-                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.8 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
+                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.9 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
                 terminalInput.value = '';
                 return;
             } else {
