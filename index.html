@@ -36,7 +36,7 @@
 
         /* Section-wise strict uniform card sizing */
         .hub-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 240px; }
-        .tech-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; }
+        .tech-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 220px; }
         .exp-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 320px; }
         .project-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 340px; height: 100% !important; }
         .edu-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 280px; }
@@ -171,14 +171,14 @@
                     </div>
 
                     <div id="terminal-logs" class="p-5 h-[340px] overflow-y-auto font-mono text-xs space-y-3 text-slate-300">
-                        <div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.9 ONLINE</div>
-                        <div>Ask anything about my background, career, education, or Vortex AI Studio!</div>
-                        <div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> or <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">vortex</span> to inspect services...</div>
+                        <div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v10.0 ONLINE</div>
+                        <div>Ask anything about my background, career, IT infrastructure, or portfolio!</div>
+                        <div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span>, <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">it</span>, or <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">vortex</span> to inspect...</div>
                     </div>
 
                     <form onsubmit="handleTerminalCommand(event)" class="border-t border-white/10 bg-[#030604] p-3.5 flex items-center space-x-2.5">
                         <span class="text-emerald-400 font-mono text-xs">$</span>
-                        <input type="text" id="terminal-input" placeholder="try 'about', 'vortex', 'xpert', 'stack'..." class="bg-transparent border-none outline-none text-xs text-white font-mono w-full focus:ring-0">
+                        <input type="text" id="terminal-input" placeholder="try 'about', 'it', 'xpert', 'portfolio'..." class="bg-transparent border-none outline-none text-xs text-white font-mono w-full focus:ring-0">
                     </form>
                 </div>
             </div>
@@ -254,6 +254,60 @@
                             <span>Explore Official AIPG Hub</span>
                             <i data-lucide="external-link" class="w-4 h-4 text-purple-400"></i>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Skills & IT Infrastructure Experience Matrix (Requested by Rimon Karim) -->
+        <section id="skills-matrix" class="mt-20">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400">
+                    <i data-lucide="cpu" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white tracking-tight">Professional Skills & IT Infrastructure Experience Matrix</h2>
+                    <p class="text-xs text-slate-400 font-mono">Specialized competencies across cloud management, cross-tenant synchronization & regional operations</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 inline-block mb-3">Cloud & Workspace</div>
+                        <h3 class="text-base font-bold text-white mb-2">Office 365 & Intune Administration</h3>
+                        <p class="text-xs text-slate-300 font-light leading-relaxed">
+                            Advanced endpoint management, policy deployment, Azure AD / Entra ID identity federation, Exchange Online administration, and compliance security protocols across multi-region enterprise environments.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-white/10 mt-4 text-[11px] text-emerald-400 font-mono">
+                        ✓ Enterprise Deployment & Security
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 inline-block mb-3">Infrastructure & Sync</div>
+                        <h3 class="text-base font-bold text-white mb-2">Cross-Tenant Sync & Cloud Architecture</h3>
+                        <p class="text-xs text-slate-300 font-light leading-relaxed">
+                            Expertise in multi-tenant cloud synchronization, hybrid identity architecture, automated provisioning pipelines, domain migrations, and high-availability network operations.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-white/10 mt-4 text-[11px] text-emerald-400 font-mono">
+                        ✓ Seamless Multi-Tenant Integration
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 inline-block mb-3">Regional Operations</div>
+                        <h3 class="text-base font-bold text-white mb-2">Cross-Border IT Operations Management</h3>
+                        <p class="text-xs text-slate-300 font-light leading-relaxed">
+                            Managing enterprise IT infrastructure, SLA compliance, incident response escalation, and vendor management across diverse geographical operations in South & East Asia.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-white/10 mt-4 text-[11px] text-emerald-400 font-mono">
+                        ✓ Regional Scale & 24/7 Reliability
                     </div>
                 </div>
             </div>
@@ -1593,7 +1647,7 @@
             } else if (rawCmd === 'contact' || rawCmd.includes('email')) {
                 response = portfolioData.contact.join("\n");
             } else if (rawCmd === 'clear') {
-                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v9.9 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
+                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // KNOWLEDGE BASE CHATBOX v10.0 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
                 terminalInput.value = '';
                 return;
             } else {
