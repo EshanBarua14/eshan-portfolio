@@ -54,6 +54,7 @@
   var ROUTES = [
     [/^(help|\?|man)$/, 't.help'],
     [/^(about|whoami|eshan)$/, 't.about'],
+    [/(aipg|adbhik|agency|studio|systems|company)/, 't.aipg'],
     [/(hire|price|pricing|service|quote|cost)/, 't.hire'],
     [/(product|work|project|hrms|hms|vms|dms|brain|reach)/, 't.products'],
     [/(stack|tech|skill)/, 't.stack'],

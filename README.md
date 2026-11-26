@@ -38,7 +38,7 @@ Rules for this site:
 ## Company logos
 Experience entries and the "Where I have worked" strip use `assets/img/logos/<key>.svg|png|webp|jpg`
 (keys: `bonusly`, `xpert`, `aipg`, `gp`, `zenith`). If a file is missing, the build shows a monogram tile instead.
-`aipg.png`, `xpert.png` (from the Xpert Fintech site's `brand/xpert-logo.png`) and `gp.png` are in the repo. Add the others (square, transparent or white background, at least 96 px) and run `python3 scripts/build.py`.
+`aipg.png`, `xpert.png` (from the Xpert Fintech site's `brand/xpert-logo.png`) , `gp.png` and `bonusly.png` (supplied by Eshan) are in the repo. Add `zenith` (square, transparent or white background, at least 96 px) and run `python3 scripts/build.py`.
 
 ## Hero shader
 Built with the shader-art-coding skill's tested GLSL library (MIT, `github.com/gokayfem/shader-skills`):

@@ -143,8 +143,8 @@ def main():
     for k in [k for k in en if re.search(r"<\w", en[k])]:
         if sorted(re.findall(r"</?\w+", en[k])) != sorted(re.findall(r"</?\w+", bn.get(k, ""))):
             errors.append(f"markup differs between languages for {k!r}")
-    if f">{n}<" not in page and str(n) not in en.get("stat.3v", ""):
-        errors.append("certificate count in hero does not match data")
+    if str(n) not in en.get("cr.h", "") or str(n) not in en.get("cr.more", ""):
+        errors.append("certificate count in credentials heading does not match data")
 
     if errors:
         print("i18n check FAILED:\n- " + "\n- ".join(errors))
