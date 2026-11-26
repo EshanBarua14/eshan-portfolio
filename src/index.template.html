@@ -51,9 +51,10 @@
       </span>
     </a>
     <nav class="nav-links" data-i18n-attr="aria-label:nav.label" aria-label="Sections">
+      <a href="#hire" data-i18n="nav.hireWays">Hire me</a>
       <a href="#work" data-i18n="nav.work">Products</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
       <a href="#experience" data-i18n="nav.exp">Experience</a>
-      <a href="#stack" data-i18n="nav.stack">Stack</a>
       <a href="#credentials" data-i18n="nav.creds">Credentials</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
@@ -62,7 +63,7 @@
         <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
         <button type="button" data-lang="bn" aria-pressed="false" lang="bn">বাংলা</button>
       </div>
-      <a class="btn btn-sm btn-primary" href="mailto:baruaeshan333@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="nav.hire">Get in touch</span></a>
+      <a class="btn btn-sm btn-primary" href="mailto:baruaeshan333@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="nav.hire">Hire me</span></a>
     </div>
   </div>
 </header>
@@ -75,15 +76,16 @@
     <div>
       <span class="pill"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.pill">Open to AI engineering, senior software and product roles</span></span>
       <h1><span data-i18n="hero.h1a">I build the software</span> <span class="grad" data-i18n="hero.h1b">that runs businesses.</span></h1>
-      <p class="lede" data-i18n-html="hero.lede">Founder of <strong>AIPG</strong>, a software and digital content agency in Dhaka working with clients worldwide. By day I support real-time order management systems for the Dhaka and Chittagong stock exchanges at <strong>Xpert Fintech</strong>. The rest of the time I design and ship multi-tenant SaaS: a brokerage OMS, HR and payroll, hospital, procurement and retail platforms, and the AI agents that run my own company.</p>
+      <p class="lede" data-i18n-html="hero.lede">Founder of <strong>AIPG</strong>, a software and digital content agency in Dhaka working with clients worldwide. By day I support real-time trading platforms for the Dhaka and Chittagong stock exchanges at <strong>Xpert Fintech</strong>. The rest of the time I design and ship multi-tenant SaaS: HR and payroll, hospital, procurement, retail and document platforms, and the AI agents that run my own company.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#work"><span data-i18n="hero.cta1">See the products</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
+        <a class="btn btn-primary" href="#hire"><span data-i18n="hero.cta0">Hire me</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
+        <a class="btn" href="#work"><span data-i18n="hero.cta1">See the products</span></a>
         <a class="btn" href="#console"><svg aria-hidden="true"><use href="#i-term"/></svg><span data-i18n="hero.cta2">Ask the terminal</span></a>
         <a class="btn" href="https://www.linkedin.com/in/eshan01" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-in"/></svg><span>LinkedIn</span></a>
       </div>
       <dl class="stats">
         <div class="stat"><dt class="sr-only" data-i18n="stat.1l">Years in technology</dt><dd style="margin:0"><b data-i18n="stat.1v">6+ yrs</b><span data-i18n="stat.1s">in technology, since 2020</span></dd></div>
-        <div class="stat"><dt class="sr-only" data-i18n="stat.2l">Live products and sites</dt><dd style="margin:0"><b data-i18n="stat.2v">13</b><span data-i18n="stat.2s">live products and sites</span></dd></div>
+        <div class="stat"><dt class="sr-only" data-i18n="stat.2l">Live products and sites</dt><dd style="margin:0"><b data-i18n="stat.2v">14</b><span data-i18n="stat.2s">live products and sites</span></dd></div>
         <div class="stat"><dt class="sr-only" data-i18n="stat.3l">Verified certifications</dt><dd style="margin:0"><b data-i18n="stat.3v">38</b><span data-i18n="stat.3s">verified certifications</span></dd></div>
         <div class="stat"><dt class="sr-only" data-i18n="stat.4l">IEEE conference papers</dt><dd style="margin:0"><b data-i18n="stat.4v">2</b><span data-i18n="stat.4s">IEEE conference papers</span></dd></div>
       </dl>
@@ -114,7 +116,7 @@
     </div>
     <div class="term-wrap">
       <div class="card about rv">
-        <p data-i18n-html="about.p1">I started in IT infrastructure and telecom, then moved into fintech, where I learned what production really means: an order management system that cannot go down while the market is open.</p>
+        <p data-i18n-html="about.p1">I started in IT infrastructure and telecom, then moved into fintech, where I learned what production really means: a trading platform that cannot go down while the market is open.</p>
         <p data-i18n-html="about.p2">That standard is what I bring to everything I build at <strong>AIPG</strong>: tenant isolation by default, audit trails, real tests, and honest status notes. I write the requirements, design the architecture, build it, and train the people who use it.</p>
         <dl class="kv">
           <dt data-i18n="about.k1">Focus</dt><dd data-i18n="about.v1">Multi-tenant SaaS, fintech, AI agents</dd>
@@ -131,6 +133,7 @@
         </div>
         <div class="chips" id="term-chips">
           <button type="button" data-cmd="about">about</button>
+          <button type="button" data-cmd="hire">hire</button>
           <button type="button" data-cmd="products">products</button>
           <button type="button" data-cmd="stack">stack</button>
           <button type="button" data-cmd="xpert">xpert</button>
@@ -147,56 +150,54 @@
   </div>
 </section>
 
+<!-- ============ HIRE ============ -->
+<section id="hire">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="hire.eye">02 · Hire me</p>
+        <h2 data-i18n="hire.h">Three ways to work with me.</h2>
+      </div>
+      <p data-i18n="hire.sub">A role, a contract or a project: the first step is one email. I work from Dhaka (GMT+6) with teams around the world.</p>
+    </div>
+    <div class="ways">
+      <article class="card way rv">
+        <span class="way-n mono">01</span>
+        <h3 data-i18n="w1.t">Full-time role</h3>
+        <p data-i18n="w1.d">For companies hiring an AI engineer, senior software engineer or product manager.</p>
+        <ul><li data-i18n="w1.i0">Production fintech support plus full product ownership</li><li data-i18n="w1.i1">Requirements, architecture, code and training in one person</li><li data-i18n="w1.i2">Remote, hybrid or on-site in Dhaka</li></ul>
+        <a class="btn btn-sm" href="mailto:baruaeshan333@gmail.com?subject=Role%20for%20Eshan%20Barua"><span data-i18n="w1.c">Discuss a role</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card way rv">
+        <span class="way-n mono">02</span>
+        <h3 data-i18n="w2.t">Contract or consulting</h3>
+        <p data-i18n="w2.d">For teams that need a senior builder for a defined piece of work.</p>
+        <ul><li data-i18n="w2.i0">Multi-tenant SaaS architecture and reviews</li><li data-i18n="w2.i1">AI agents and automation on Claude and Gemini</li><li data-i18n="w2.i2">BRD, SRS and UAT for regulated products</li></ul>
+        <a class="btn btn-sm" href="mailto:baruaeshan333@gmail.com?subject=Contract%20work"><span data-i18n="w2.c">Book a contract</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card way rv">
+        <span class="way-n mono">03</span>
+        <h3 data-i18n="w3.t">A project through AIPG</h3>
+        <p data-i18n="w3.d">For businesses that want a film, a website or business software delivered at a fixed price.</p>
+        <ul><li data-i18n="w3.i0">Fixed price, quoted in your currency</li><li data-i18n="w3.i1">One team, one point of contact: me</li><li data-i18n="w3.i2">Ready-made products set up in weeks, not months</li></ul>
+        <a class="btn btn-sm" href="#services"><span data-i18n="w3.c">See services and prices</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PRODUCTS ============ -->
 <section id="work">
   <div class="wrap">
     <div class="sec-head rv">
       <div>
-        <p class="eyebrow" data-i18n="work.eye">02 · Products</p>
-        <h2 data-i18n="work.h">Shipped systems, not side projects.</h2>
+        <p class="eyebrow" data-i18n="work.eye">03 · Products</p>
+        <h2 data-i18n="work.h">Shipped systems, not slideware.</h2>
       </div>
-      <p data-i18n="work.sub">Each one has a live demo. Most repositories are private because they are commercial products; I can walk you through the code on a call.</p>
+      <p data-i18n="work.sub">Every one is live. Most repositories are private because they are commercial products; I can walk you through the code on a call.</p>
     </div>
 
     <div class="bento">
-      <!-- OMS -->
-      <article class="card p hero-p rv">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <div class="p-top"><span class="tag" data-i18n="oms.tag">Capital markets · Flagship</span><span class="status" data-i18n="st.live">Live demo</span></div>
-          <h3>BdStockOMS</h3>
-          <p class="sum" data-i18n="oms.sum">A multi-tenant order management system for Bangladeshi brokerage houses trading on the DSE and CSE.</p>
-          <ul>
-            <li data-i18n="oms.b1">KYC, cascading risk limits, settlement, commission and corporate actions in one platform</li>
-            <li data-i18n="oms.b2">13 roles with strict tenant isolation: every request re-derives the brokerage from the database</li>
-            <li data-i18n="oms.b3">Real-time order and portfolio updates over SignalR</li>
-            <li data-i18n="oms.b4">Companion matching engine in C: 11 order types, price-time priority, risk bands</li>
-          </ul>
-          <div class="stack"><span>.NET 8</span><span>React 18</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>SignalR</span><span>C17</span></div>
-          <div class="links"><a href="https://bd-stock-oms.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
-        </div>
-        <figure style="margin:0">
-          <svg class="arch" viewBox="0 0 520 330" role="img" data-i18n-attr="aria-label:oms.arch" aria-label="Architecture: brokerage tenants connect to the OMS core, which talks to the matching engine and, through a FIX gateway, to the exchanges.">
-            <g>
-              <rect class="box" x="16" y="30" width="128" height="52" rx="10"/><text x="80" y="53" text-anchor="middle" class="t-strong" data-i18n="arch.ba">Broker A</text><text x="80" y="70" text-anchor="middle" data-i18n="arch.tenant">tenant</text>
-              <rect class="box" x="16" y="139" width="128" height="52" rx="10"/><text x="80" y="162" text-anchor="middle" class="t-strong" data-i18n="arch.bb">Broker B</text><text x="80" y="179" text-anchor="middle" data-i18n="arch.tenant">tenant</text>
-              <rect class="box" x="16" y="248" width="128" height="52" rx="10"/><text x="80" y="271" text-anchor="middle" class="t-strong" data-i18n="arch.inv">Investor</text><text x="80" y="288" text-anchor="middle" data-i18n="arch.self">self-scoped</text>
-              <rect class="box core" x="196" y="104" width="140" height="122" rx="12"/>
-              <text x="266" y="136" text-anchor="middle" class="t-strong" data-i18n="arch.core">OMS core</text>
-              <text x="266" y="158" text-anchor="middle">RMS · KYC</text>
-              <text x="266" y="176" text-anchor="middle" data-i18n="arch.settle">settlement</text>
-              <text x="266" y="194" text-anchor="middle" data-i18n="arch.audit">audit · SignalR</text>
-              <rect class="box" x="384" y="56" width="122" height="60" rx="10"/><text x="445" y="82" text-anchor="middle" class="t-strong" data-i18n="arch.match">Matching</text><text x="445" y="100" text-anchor="middle" data-i18n="arch.engine">C17 engine</text>
-              <rect class="box" x="384" y="214" width="122" height="60" rx="10"/><text x="445" y="240" text-anchor="middle" class="t-strong" data-i18n="arch.fix">FIX gateway</text><text x="445" y="258" text-anchor="middle">DSE · CSE</text>
-              <path class="wire" d="M144 56 C170 56 170 140 196 140"/><path class="wire" d="M144 165 H196"/><path class="wire" d="M144 274 C170 274 170 190 196 190"/>
-              <path class="wire" d="M336 140 C360 140 360 86 384 86"/><path class="wire" d="M336 190 C360 190 360 244 384 244"/>
-              <path class="flow" d="M144 56 C170 56 170 140 196 140"/><path class="flow" d="M144 165 H196"/><path class="flow" d="M144 274 C170 274 170 190 196 190"/>
-              <path class="flow" d="M336 140 C360 140 360 86 384 86"/><path class="flow" d="M336 190 C360 190 360 244 384 244"/>
-            </g>
-          </svg>
-          <figcaption class="arch-cap" data-i18n="oms.cap">How the pieces connect. The FIX gateway is a working prototype; exchange adapters wait on the official venue specifications.</figcaption>
-        </figure>
-      </article>
-
       <!-- HRMS -->
       <article class="card p wide rv">
         <div class="p-top"><span class="tag" data-i18n="hr.tag">HR &amp; payroll</span><span class="status" data-i18n="st.live">Live demo</span></div>
@@ -268,6 +269,22 @@
         <div class="links"><a href="https://e-commerce-six-tawny-29.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
       </article>
 
+      <!-- Xpert Fintech site -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="xf.tag">Client website · fintech</span><span class="status" data-i18n="st.liveSite">Live</span></div>
+        <h3 data-i18n="xf.name">Xpert Fintech website</h3>
+        <p class="sum" data-i18n="xf.sum">The corporate website of Xpert Fintech Ltd., with live DSE and CSE market data, English and Bangla, and an admin panel for the team to run it.</p>
+        <div class="stack"><span>Next.js</span><span>React</span><span>TypeScript</span></div>
+        <div class="links"><a href="https://xpertfintech.com" target="_blank" rel="noopener"><span data-i18n="lnk.visit">Visit</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <!-- Accounting -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="acc.tag">Finance</span><span class="status" data-i18n="st.live">Live demo</span></div>
+        <h3 data-i18n="acc.name">OmniLedger · Accounting</h3>
+        <p class="sum" data-i18n="acc.sum">Accounting software for growing companies, built around a multi-currency general ledger. Pairs with the HR and store systems as one back office.</p>
+        <div class="stack"><span>TypeScript</span><span>React</span></div>
+        <div class="links"><a href="https://accounting-software-taupe.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
+      </article>
       <!-- Brain -->
       <article class="card p wide rv">
         <div class="p-top"><span class="tag" data-i18n="brain.tag">AI operations</span><span class="status" data-i18n="st.inuse">Runs AIPG daily</span></div>
@@ -331,7 +348,84 @@
         <div class="stack"><span>HTML</span><span>JavaScript</span><span>bKash</span><span>Nagad</span></div>
         <div class="links"><a href="https://vortex-ai-studio-eight.vercel.app/" target="_blank" rel="noopener"><span data-i18n="lnk.visit">Visit</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
       </article>
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="spa.tag">Incident management · open source</span></div>
+        <h3>SupportPilot AI</h3>
+        <p class="sum" data-i18n="spa.sum">An AI-assisted support and incident desk that drafts replies and triages tickets with Gemini.</p>
+        <div class="stack"><span>React 19</span><span>Express</span><span>.NET</span><span>Gemini</span></div>
+        <div class="links"><a href="https://support-pilot-ai-two.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><a href="https://github.com/EshanBarua14/SupportPilot-AI" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-gh"/></svg><span data-i18n="lnk.code">Code</span></a></div>
+      </article>
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="omni.tag">PMO reporting · open source</span></div>
+        <h3>OmniSync</h3>
+        <p class="sum" data-i18n="omni.sum">A Jira reporting dashboard and automation bot that turns sprint data into ready-to-send project reports, as a web and desktop app.</p>
+        <div class="stack"><span>React</span><span>Express</span><span>Electron</span></div>
+        <div class="links"><a href="https://github.com/EshanBarua14/Jira-Reporting-Dashboard-Automation-Bot" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-gh"/></svg><span data-i18n="lnk.code">Code</span></a></div>
+      </article>
     </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="svc.eye">04 · Services &amp; pricing</p>
+        <h2 data-i18n="svc.h">Clear prices. Fixed delivery times.</h2>
+      </div>
+      <p data-i18n="svc.sub">What I deliver through AIPG, with the published list prices. Each country has its own price, set for that market, not a currency conversion.</p>
+    </div>
+    <div class="offers">
+      <article class="card offer rv">
+        <span class="tag" data-i18n="of1.tag">AIPG Studios</span>
+        <h3 data-i18n="of1.h">Brand films &amp; audio</h3>
+        <p data-i18n="of1.d">Cinematic ads priced by length and level of detail. Original background music with a commercial licence in every film.</p>
+        <ul class="olist"><li><span class="o-name" data-i18n="of1.r1.n">10s Standard ad</span><span class="o-time" data-i18n="of1.r1.t">72 h</span><span class="o-price" data-i18n="of1.r1.p">US$400</span></li><li><span class="o-name" data-i18n="of1.r2.n">The Spark: 30s Standard ad</span><span class="o-time" data-i18n="of1.r2.t">72 h</span><span class="o-price" data-i18n="of1.r2.p">US$1,000</span></li><li><span class="o-name" data-i18n="of1.r3.n">30s Detailed ad, with voiceover</span><span class="o-time" data-i18n="of1.r3.t">4 days</span><span class="o-price" data-i18n="of1.r3.p">US$1,500</span></li><li><span class="o-name" data-i18n="of1.r4.n">30s Premium ad, VFX and 3D</span><span class="o-time" data-i18n="of1.r4.t">7 days</span><span class="o-price" data-i18n="of1.r4.p">US$2,200</span></li><li><span class="o-name" data-i18n="of1.r5.n">Sonic logo</span><span class="o-time" data-i18n="of1.r5.t">3 days</span><span class="o-price" data-i18n="of1.r5.p">US$400</span></li><li><span class="o-name" data-i18n="of1.r6.n">Brand jingle</span><span class="o-time" data-i18n="of1.r6.t">5 days</span><span class="o-price" data-i18n="of1.r6.p">US$900</span></li></ul>
+        <a class="olink" href="https://aipgbd-nexus.vercel.app" target="_blank" rel="noopener"><span data-i18n="of1.l">All packages on the AIPG site</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card offer rv">
+        <span class="tag" data-i18n="of2.tag">AIPG Systems</span>
+        <h3 data-i18n="of2.h">Websites</h3>
+        <p data-i18n="of2.d">Fast, bilingual sites built from the AIPG website kit, with WhatsApp and call buttons, structured data and security headers.</p>
+        <ul class="olist"><li><span class="o-name" data-i18n="of2.r1.n">Sales landing page</span><span class="o-time" data-i18n="of2.r1.t">5 working days</span><span class="o-price" data-i18n="of2.r1.p">US$1,100</span></li><li><span class="o-name" data-i18n="of2.r2.n">Business website, up to 5 pages</span><span class="o-time" data-i18n="of2.r2.t">10 working days</span><span class="o-price" data-i18n="of2.r2.p">US$4,100</span></li><li><span class="o-name" data-i18n="of2.r3.n">Shop website, up to 40 products</span><span class="o-time" data-i18n="of2.r3.t">14 working days</span><span class="o-price" data-i18n="of2.r3.p">US$7,000</span></li><li><span class="o-name" data-i18n="of2.r4.n">CMS add-on: edit it yourself</span><span class="o-time" data-i18n="of2.r4.t">+3 working days</span><span class="o-price" data-i18n="of2.r4.p">US$500</span></li></ul>
+        <a class="olink" href="https://aipgbd-nexus.vercel.app/samples/nira/" target="_blank" rel="noopener"><span data-i18n="of2.l">See a sample site</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card offer feat rv">
+        <span class="tag" data-i18n="of3.tag">AIPG Systems</span>
+        <h3 data-i18n="of3.h">Business software</h3>
+        <p data-i18n="of3.d">The products above, set up for your company with your data, roles and branding. One-time setup; monthly plan quoted with it.</p>
+        <ul class="olist"><li><span class="o-name" data-i18n="of3.r1.n">Document management (DMS)</span><span class="o-time" data-i18n="of3.r1.t">2–4 weeks</span><span class="o-price" data-i18n="of3.r1.p">US$2,900</span></li><li><span class="o-name" data-i18n="of3.r2.n">Store management</span><span class="o-time" data-i18n="of3.r2.t">3–4 weeks</span><span class="o-price" data-i18n="of3.r2.p">US$3,300</span></li><li><span class="o-name" data-i18n="of3.r3.n">Vendor management (VMS)</span><span class="o-time" data-i18n="of3.r3.t">3–5 weeks</span><span class="o-price" data-i18n="of3.r3.p">US$4,000</span></li><li><span class="o-name" data-i18n="of3.r4.n">HR management (HRMS)</span><span class="o-time" data-i18n="of3.r4.t">4–6 weeks</span><span class="o-price" data-i18n="of3.r4.p">US$4,700</span></li><li><span class="o-name" data-i18n="of3.r5.n">E-commerce platform</span><span class="o-time" data-i18n="of3.r5.t">5–8 weeks</span><span class="o-price" data-i18n="of3.r5.p">US$5,700</span></li><li><span class="o-name" data-i18n="of3.r6.n">Hospital management (HMS)</span><span class="o-time" data-i18n="of3.r6.t">6–10 weeks</span><span class="o-price" data-i18n="of3.r6.p">US$6,800</span></li></ul>
+        <a class="olink" href="https://aipgbd-nexus.vercel.app" target="_blank" rel="noopener"><span data-i18n="of3.l">Product pages on the AIPG site</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card offer rv">
+        <span class="tag" data-i18n="of4.tag">AIPG Systems</span>
+        <h3 data-i18n="of4.h">AIPG Reach: AI sales agent</h3>
+        <p data-i18n="of4.d">Answers your customers on chat and phone from your own price list, and hands anything sensitive to a person. 3,000 AI replies a month included.</p>
+        <ul class="olist"><li><span class="o-name" data-i18n="of4.r1.n">Reach Chat: web, WhatsApp, Messenger, Instagram</span><span class="o-time" data-i18n="of4.r1.t">Setup US$600</span><span class="o-price" data-i18n="of4.r1.p">US$170 / mo</span></li><li><span class="o-name" data-i18n="of4.r2.n">Reach Complete: every channel plus AI phone agent</span><span class="o-time" data-i18n="of4.r2.t">Setup US$900</span><span class="o-price" data-i18n="of4.r2.p">US$280 / mo</span></li></ul>
+        <a class="olink" href="https://aipgbd-nexus.vercel.app" target="_blank" rel="noopener"><span data-i18n="of4.l">Details on the AIPG site</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+    <p class="fine rv" data-i18n="svc.note">All prices exclude VAT and other taxes. Prices for 10 other currencies, including GBP, INR, AED and SAR, are on the AIPG site.</p>
+    <div class="cta-row rv" style="margin-top:20px">
+      <a class="btn btn-primary" href="mailto:baruaeshan333@gmail.com?subject=Project%20with%20AIPG"><svg aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="svc.cta">Ask for a quote</span></a>
+      <a class="btn" href="https://wa.me/8801883165981" target="_blank" rel="noopener"><span data-i18n="svc.cta2">WhatsApp AIPG</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY + PROCESS ============ -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="why.eye">05 · Why me</p>
+        <h2 data-i18n="why.h">Why clients and teams pick me.</h2>
+      </div>
+    </div>
+    <div class="why card rv"><div class="why-i"><h3 data-i18n="why.1t">Proof, not promises</h3><p data-i18n="why.1d">Every product on this page has a live demo you can click today.</p></div><div class="why-i"><h3 data-i18n="why.2t">Fintech-grade discipline</h3><p data-i18n="why.2d">Years of production support on stock-exchange systems: audit trails, UAT and change control are habits, not extras.</p></div><div class="why-i"><h3 data-i18n="why.3t">Tested and honest</h3><p data-i18n="why.3d">Automated tests on the products (1,325 on the HRMS alone) and plain status notes about what is finished and what is not.</p></div><div class="why-i"><h3 data-i18n="why.4t">Built for Bangladesh and the world</h3><p data-i18n="why.4d">Bangla and English interfaces, local tax rules like NBR and VAT, and prices set for 11 currencies.</p></div><div class="why-i"><h3 data-i18n="why.5t">AI that does real work</h3><p data-i18n="why.5d">I run my own company on 74 AI agents with human approval gates, and I build the same for clients.</p></div><div class="why-i"><h3 data-i18n="why.6t">One accountable person</h3><p data-i18n="why.6d">You talk to the person who writes the requirements, designs the system and ships it.</p></div></div>
+    <h3 class="sub-h rv" data-i18n="pr.h">How I work</h3>
+    <ol class="steps"><li class="step rv"><span class="step-n mono">01</span><h3 data-i18n="pr.1t">Discovery call</h3><p data-i18n="pr.1d">We agree on the goal, the users and what "done" means.</p></li><li class="step rv"><span class="step-n mono">02</span><h3 data-i18n="pr.2t">Written scope and price</h3><p data-i18n="pr.2d">A fixed scope, timeline and price in your currency, before any work starts.</p></li><li class="step rv"><span class="step-n mono">03</span><h3 data-i18n="pr.3t">Build with regular demos</h3><p data-i18n="pr.3d">You see working software or footage as it takes shape, not only at the end.</p></li><li class="step rv"><span class="step-n mono">04</span><h3 data-i18n="pr.4t">Launch and handover</h3><p data-i18n="pr.4d">Go-live, training for your team, and support after launch.</p></li></ol>
   </div>
 </section>
 
@@ -340,7 +434,7 @@
   <div class="wrap">
     <div class="sec-head rv">
       <div>
-        <p class="eyebrow" data-i18n="exp.eye">03 · Experience</p>
+        <p class="eyebrow" data-i18n="exp.eye">06 · Experience</p>
         <h2 data-i18n="exp.h">From network rooms to trading floors.</h2>
       </div>
       <p data-i18n="exp.sub">Telecom, enterprise IT and fintech, each one raising the bar for uptime and rigour.</p>
@@ -364,7 +458,7 @@
           <h3 data-i18n="j1.role">Software support engineer</h3>
           <p class="org">Xpert Fintech Ltd.</p>
           <ul>
-            <li data-i18n="j1.b1">L2/L3 production support for real-time order management systems serving the Dhaka and Chittagong stock exchanges</li>
+            <li data-i18n="j1.b1">L2/L3 production support for real-time trading platforms used by brokerages on the Dhaka and Chittagong stock exchanges</li>
             <li data-i18n="j1.b2">Write BRDs, SRSs and user acceptance test matrices</li>
             <li data-i18n="j1.b3">Train users and present to stakeholders on fintech platforms including eKYC and the customer support management system</li>
           </ul>
@@ -402,7 +496,7 @@
   <div class="wrap">
     <div class="sec-head rv">
       <div>
-        <p class="eyebrow" data-i18n="stk.eye">04 · Stack</p>
+        <p class="eyebrow" data-i18n="stk.eye">07 · Stack</p>
         <h2 data-i18n="stk.h">The tools I ship with.</h2>
       </div>
     </div>
@@ -422,7 +516,7 @@
   <div class="wrap">
     <div class="sec-head rv">
       <div>
-        <p class="eyebrow" data-i18n="res.eye">05 · Research &amp; education</p>
+        <p class="eyebrow" data-i18n="res.eye">08 · Research &amp; education</p>
         <h2 data-i18n="res.h">Published, then shipped.</h2>
       </div>
     </div>
@@ -466,7 +560,7 @@
   <div class="wrap">
     <div class="sec-head rv">
       <div>
-        <p class="eyebrow" data-i18n="cr.eye">06 · Credentials</p>
+        <p class="eyebrow" data-i18n="cr.eye">09 · Credentials</p>
         <h2 data-i18n="cr.h">38 certifications, each one checkable.</h2>
       </div>
       <p data-i18n="cr.sub">Most cards open the issuer's own verification page. The rest link to the issuer with the credential ID shown.</p>
@@ -485,15 +579,30 @@
   </div>
 </section>
 
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="faq.eye">10 · FAQ</p>
+        <h2 data-i18n="faq.h">Common questions</h2>
+      </div>
+    </div>
+    <div class="faq"><details class="qa rv"><summary data-i18n="faq.1q">Do you work with clients outside Bangladesh?</summary><p data-i18n="faq.1a">Yes. I work remotely from Dhaka (GMT+6) and overlap with Europe, the Middle East and Asia in the working day. AIPG quotes in 11 currencies.</p></details><details class="qa rv"><summary data-i18n="faq.2q">Are you available for a full-time role?</summary><p data-i18n="faq.2a">Yes, for AI engineering, senior software engineering and product management roles. Email me the role details and we can set up a call.</p></details><details class="qa rv"><summary data-i18n="faq.3q">Can I see the code?</summary><p data-i18n="faq.3a">Most product code is private because the products are sold. I can walk you through the repositories on a screen-share call. Some projects are open source on GitHub.</p></details><details class="qa rv"><summary data-i18n="faq.4q">Do the prices include tax?</summary><p data-i18n="faq.4a">No. Prices exclude VAT and other taxes, which are added to the invoice where they apply.</p></details><details class="qa rv"><summary data-i18n="faq.5q">Can you customise a product for my company?</summary><p data-i18n="faq.5a">Yes. Setup includes your roles, data and branding. Larger changes are scoped and quoted separately before work starts.</p></details><details class="qa rv"><summary data-i18n="faq.6q">Which languages do you work in?</summary><p data-i18n="faq.6a">English and Bangla, in writing, on calls and in the software itself.</p></details></div>
+  </div>
+</section>
+
 <!-- ============ CONTACT ============ -->
-<section id="contact" style="padding-top:0">
+<section id="contact">
   <div class="wrap">
     <div class="card contact rv">
-      <p class="eyebrow" data-i18n="ct.eye">07 · Contact</p>
+      <p class="eyebrow" data-i18n="ct.eye">11 · Contact</p>
       <h2 data-i18n="ct.h">Have a system that has to work? Let's talk.</h2>
-      <p data-i18n="ct.p">For roles, product partnerships or a project with AIPG, email me. I work from Dhaka (GMT+6) with teams in any time zone.</p>
+      <p data-i18n="ct.p">For roles, product partnerships or a project with AIPG, email me at baruaeshan333@gmail.com. I work from Dhaka (GMT+6) with teams in any time zone.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:baruaeshan333@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg><span>baruaeshan333@gmail.com</span></a>
+        <a class="btn btn-primary" href="mailto:baruaeshan333@gmail.com?subject=Role%20for%20Eshan%20Barua"><svg aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="ct.role">Hire me for a role</span></a>
+        <a class="btn" href="mailto:baruaeshan333@gmail.com?subject=Project%20with%20AIPG"><svg aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="ct.proj">Start a project</span></a>
+        <a class="btn" href="https://wa.me/8801883165981" target="_blank" rel="noopener"><span data-i18n="svc.cta2">WhatsApp AIPG</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         <a class="btn" href="https://www.linkedin.com/in/eshan01" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-in"/></svg><span>LinkedIn</span></a>
         <a class="btn" href="https://github.com/EshanBarua14" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-gh"/></svg><span>GitHub</span></a>
         <a class="btn" href="https://aipgbd-nexus.vercel.app" target="_blank" rel="noopener"><span data-i18n="ct.aipg">AIPG website</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
