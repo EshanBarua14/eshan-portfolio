@@ -35,6 +35,11 @@ Rules for this site:
 - Certificate titles and paper titles stay in their original English (they are official names); everything around them is translated.
 - The page shows no prices. If prices are ever added, convert at the current market exchange rate.
 
+## Company logos
+Experience entries and the "Where I have worked" strip use `assets/img/logos/<key>.svg|png|webp|jpg`
+(keys: `bonusly`, `xpert`, `aipg`, `gp`, `zenith`). If a file is missing, the build shows a monogram tile instead.
+Only `aipg.png` is in the repo so far. Add the others (square, transparent or white background, at least 96 px) and run `python3 scripts/build.py`.
+
 ## Hero shader
 Built with the shader-art-coding skill's tested GLSL library (MIT, `github.com/gokayfem/shader-skills`):
 `warpedFbm` flow field, `tonemapAgX`, `linearToSrgb`, `ditherTPDF`, plus a perspective grid.

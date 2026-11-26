@@ -110,6 +110,16 @@ def main():
     block, n = cert_html(certs)
     page = tpl.replace("<!--CERTS-->", block)
 
+    # Company logos: drop a file at assets/img/logos/<key>.svg|png|webp|jpg and rebuild.
+    # Without a file, a monogram tile is shown instead.
+    def logo(m):
+        key, mono = m.group(1), m.group(2)
+        for ext in ("svg", "png", "webp", "jpg"):
+            if (ROOT / f"assets/img/logos/{key}.{ext}").exists():
+                return f'<span class="logo" aria-hidden="true"><img src="assets/img/logos/{key}.{ext}" alt="" width="40" height="40" loading="lazy"></span>'
+        return f'<span class="logo mono-l" aria-hidden="true">{mono}</span>'
+    page = re.sub(r"<!--LOGO:([a-z0-9-]+)\|([^>]+?)-->", logo, page)
+
     ex = Extract()
     ex.feed(page)
     en = dict(ex.found)
