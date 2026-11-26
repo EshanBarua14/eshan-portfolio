@@ -1,0 +1,268 @@
+[
+ {
+  "issuer": "Anthropic",
+  "date": "2026-09",
+  "title": "Claude Academy: Introduction to Model Context Protocol",
+  "id": "ID: 9a277d7a87d729e12358ddf8b3057bcf",
+  "url": "https://academy.claude.com/verify/9a277d7a87d729e12358ddf8b3057bcf"
+ },
+ {
+  "issuer": "Anthropic",
+  "date": "2026-09",
+  "title": "Claude Academy: Claude Code in Action",
+  "id": "ID: d0bc85d7c29b22f399f3a1f6ca36dcc1",
+  "url": "https://academy.claude.com/verify/d0bc85d7c29b22f399f3a1f6ca36dcc1"
+ },
+ {
+  "issuer": "Anthropic",
+  "date": "2026-09",
+  "title": "Claude Academy: Claude Platform 101",
+  "id": "ID: b21d7e2d6e44881181c8146f6d1b7b96",
+  "url": "https://academy.claude.com/verify/b21d7e2d6e44881181c8146f6d1b7b96"
+ },
+ {
+  "issuer": "Anthropic",
+  "date": "2026-09",
+  "title": "Claude Academy: Introduction to Claude Cowork",
+  "id": "ID: 0ce41199eabe11062114477b6fd0564d",
+  "url": "https://academy.claude.com/verify/0ce41199eabe11062114477b6fd0564d"
+ },
+ {
+  "issuer": "Anthropic",
+  "date": "2026-09",
+  "title": "Claude Academy: Claude Code 101",
+  "id": "ID: 4777cb3bb06f16bd17c9e938c3dc2524",
+  "url": "https://academy.claude.com/verify/4777cb3bb06f16bd17c9e938c3dc2524"
+ },
+ {
+  "issuer": "Anthropic",
+  "date": "2026-09",
+  "title": "Claude Academy: Claude 101",
+  "id": "ID: 89e4e552a6792d80f94fe6c159c27794",
+  "url": "https://academy.claude.com/verify/89e4e552a6792d80f94fe6c159c27794"
+ },
+ {
+  "issuer": "Canva",
+  "date": "2026-08",
+  "title": "Graphic Design Essentials",
+  "id": "ID: 791f89",
+  "url": "https://www.canva.com"
+ },
+ {
+  "issuer": "Project Management Institute",
+  "date": "2026-08",
+  "title": "Practical Application of Generative AI for Project Managers",
+  "id": "ID: 776570171860",
+  "url": "https://www.pmi.org"
+ },
+ {
+  "issuer": "Project Management Institute",
+  "date": "2026-08",
+  "title": "Talking to AI: Prompt Engineering for Project Managers",
+  "id": "ID: 563870170883",
+  "url": "https://www.pmi.org"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "React Essential Training & PWA Architecture",
+  "id": "ID: 7ef00e3a...2d3a4",
+  "url": "https://www.linkedin.com/learning/verify/7ef00e3a60933da10a209eb5591ebac976eb2c2db5176468b61368d74272d3a4"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "React: Building Progressive Web Apps (PWAs)",
+  "id": "ID: e47a38d051603...8ec872",
+  "url": "https://www.linkedin.com/learning/verify/e47a38d051603c9644edb7e278220238ecb67eb649e2108ed971f53c718ec872"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "NoSQL Essential Training",
+  "id": "ID: 59a8bf9761fe...87c56aac",
+  "url": "https://www.linkedin.com/learning/verify/59a8bf9761fe0b630865b2c3d3b7c530a5fd10a2fc40207de73a833a87c56aac"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "Creating API Documentation",
+  "id": "ID: 509d969060ae...6989c8e2",
+  "url": "https://www.linkedin.com/learning/verify/509d969060ae0f552785f4780b47bc9d66917f46f38f017cb5c066936989c8e2"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "Slack Essential Training",
+  "id": "ID: 5c8d79a83417...be2d973",
+  "url": "https://www.linkedin.com/learning/verify/5c8d79a83417e0c0859c3d71e19f3479c1f2c01e5e9a23ece11a90fe4be2d973"
+ },
+ {
+  "issuer": "AWS / LinkedIn",
+  "date": "2025-11",
+  "title": "Building Serverless Applications in AWS",
+  "id": "ID: d855a8a85adf...fcc67c66",
+  "url": "https://www.linkedin.com/learning/verify/d855a8a85adf364a6b549d68e99a7142e436f8006bae58410610bf17fcc67c66"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "Introduction to NoSQL",
+  "id": "ID: cb0c43d7978b...35d50bb",
+  "url": "https://www.linkedin.com/learning/verify/cb0c43d7978b96c4c477f211c07e08a6ce7b5b5c871769f3ef3d216fa35d50bb"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "Creating a Responsive Web Design",
+  "id": "ID: da11ace5a653...1966c0fe",
+  "url": "https://www.linkedin.com/learning/verify/da11ace5a653ecf8e61d5d0418195eb87d2471147b707a0dcf0dc6871966c0fe"
+ },
+ {
+  "issuer": "PMI",
+  "date": "2025-11",
+  "title": "Learning Confluence",
+  "id": "ID: 737ac2716e17...2fd9a3dd",
+  "url": "https://www.linkedin.com/learning/verify/737ac2716e175dc515a616106c9ef43a30b785504c13a3ff07ad00512fd9a3dd"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "Learning Jira: Sprints, Bugs & Tracking",
+  "id": "ID: 7934c14c519e...06f35ac102",
+  "url": "https://www.linkedin.com/learning/verify/7934c14c519ec4c63539d719a2258580328d5586e1651fdb48d87c06f35ac102"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "Prompt Engineering: How to Talk to the AIs",
+  "id": "ID: 9491334dece3...22435e8ffd",
+  "url": "https://www.linkedin.com/learning/verify/9491334dece355fdd5324fde631a645b017ce5d82f3311c18e0c0622435e8ffd"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "Automated Software Refactoring with OpenRewrite",
+  "id": "ID: d644caf43f17...9f4cc432f",
+  "url": "https://www.linkedin.com/learning/verify/d644caf43f179325727aad3af63162d1a40497242b1e19216a1d4d9f4cc432f"
+ },
+ {
+  "issuer": "CompTIA",
+  "date": "2025-11",
+  "title": "Agile Software Development",
+  "id": "ID: 8ce04fc4ba39...3860a4b67",
+  "url": "https://www.linkedin.com/learning/verify/8ce04fc4ba39d92cf8871b403c3b242d61684236236ba4831d35d943860a4b67"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "WordPress: Mastering Full Site Editing",
+  "id": "ID: 83b0b5486dea...26a8bbf",
+  "url": "https://www.linkedin.com/learning/verify/83b0b5486dea6b4bce592c940b334be9daa66f2eb7f222a8a4a98b24c26a8bbf"
+ },
+ {
+  "issuer": "LinkedIn Learning",
+  "date": "2025-11",
+  "title": "Canva for Web and Digital Design Projects",
+  "id": "ID: 067e3b0dd553...702a3fa3e5",
+  "url": "https://www.linkedin.com/learning/verify/067e3b0dd55347a16ddb2a30a843a55adf55cec587218ab8827afc702a3fa3e5"
+ },
+ {
+  "issuer": "PMI",
+  "date": "2025-11",
+  "title": "Communicating with Confidence",
+  "id": "ID: 9f27d6f9517c...4fecd0a0f78",
+  "url": "https://www.linkedin.com/learning/verify/9f27d6f9517c00a09cbcda11c5290027586f498572e228dca05db4fecd0a0f78"
+ },
+ {
+  "issuer": "Coursera",
+  "date": "2025-06",
+  "title": "Introduction to Selenium",
+  "id": "ID: KS26F7UJPVTL",
+  "url": "https://www.coursera.org/verify/KS26F7UJPVTL"
+ },
+ {
+  "issuer": "Meta",
+  "date": "2025-06",
+  "title": "Introduction to Front-End Development",
+  "id": "ID: DN2MXOVCAUY1",
+  "url": "https://www.coursera.org/verify/DN2MXOVCAUY1"
+ },
+ {
+  "issuer": "IBM",
+  "date": "2025-05",
+  "title": "Introduction to Business Analysis",
+  "id": "ID: CXX8MIOY02E3",
+  "url": "https://www.coursera.org/verify/CXX8MIOY02E3"
+ },
+ {
+  "issuer": "IBM",
+  "date": "2025-05",
+  "title": "Introduction to DevOps",
+  "id": "ID: 21V9HHM3BGI1",
+  "url": "https://www.coursera.org/verify/21V9HHM3BGI1"
+ },
+ {
+  "issuer": "IBM",
+  "date": "2025-04",
+  "title": "Developing Websites and Front-Ends with Bootstrap",
+  "id": "ID: R5ZRZS4CNH6B",
+  "url": "https://www.coursera.org/verify/R5ZRZS4CNH6B"
+ },
+ {
+  "issuer": "Johns Hopkins",
+  "date": "2025-04",
+  "title": "HTML, CSS, and Javascript for Web Developers",
+  "id": "ID: U90PELINTPU1",
+  "url": "https://www.coursera.org/verify/U90PELINTPU1"
+ },
+ {
+  "issuer": "Google",
+  "date": "2025-01",
+  "title": "The Bits and Bytes of Computer Networking",
+  "id": "ID: 1XMVIKXDAXKK",
+  "url": "https://www.coursera.org/verify/1XMVIKXDAXKK"
+ },
+ {
+  "issuer": "Knowledge Accelerators",
+  "date": "2025-01",
+  "title": "From Excel to Power BI",
+  "id": "ID: L38R8S0D41J8",
+  "url": "https://www.coursera.org/verify/L38R8S0D41J8"
+ },
+ {
+  "issuer": "University of Leeds",
+  "date": "2025-01",
+  "title": "Foundations of Software Testing and Validation",
+  "id": "ID: 7W4PEFZZ0COT",
+  "url": "https://www.coursera.org/verify/7W4PEFZZ0COT"
+ },
+ {
+  "issuer": "Coursera",
+  "date": "2025-02",
+  "title": "Business Analysis & Process Management",
+  "id": "ID: T6CXJND9DE3Y",
+  "url": "https://www.coursera.org/verify/T6CXJND9DE3Y"
+ },
+ {
+  "issuer": "IBM",
+  "date": "2025-01",
+  "title": "Introduction to Software Engineering",
+  "id": "ID: 15L2O2PLATIY",
+  "url": "https://www.coursera.org/verify/15L2O2PLATIY"
+ },
+ {
+  "issuer": "BITM",
+  "date": "2024-05",
+  "title": "Microsoft ASP .net MVC Core with SQL Server 2019",
+  "id": "Issuer: BITM",
+  "url": "https://www.bitm.org.bd"
+ },
+ {
+  "issuer": "Google",
+  "date": "2025-01",
+  "title": "Technical Support Fundamentals",
+  "id": "ID: 70UTKWQWT6DL",
+  "url": "https://www.coursera.org/verify/70UTKWQWT6DL"
+ }
+]

@@ -1,1647 +1,559 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eshan Barua | Software Support Engineer & Systems Architect</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .font-mono { font-family: 'JetBrains Mono', monospace; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-        @keyframes fadeSlideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-            animation: fadeSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-
-        .glass-panel {
-            background: rgba(14, 26, 20, 0.88);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.65);
-            transition: all 0.3s ease;
-        }
-        .glass-panel:hover {
-            border-color: rgba(16, 185, 129, 0.5);
-            transform: translateY(-3px);
-        }
-
-        /* Section-wise strict uniform card sizing */
-        .hub-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 240px; }
-        .tech-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 220px; }
-        .exp-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 400px; }
-        .project-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 340px; height: 100% !important; }
-        .edu-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 280px; }
-        .cert-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 230px; width: 320px; flex-shrink: 0; }
-        .research-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; }
-
-        .glass-button {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-        .glass-button:hover {
-            background: rgba(16, 185, 129, 0.2);
-            border-color: rgba(16, 185, 129, 0.6);
-            transform: translateY(-2px);
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">Eshan Barua · Founder of AIPG, software engineer and systems architect</title>
+<meta name="description" data-i18n-attr="content:meta.desc" content="Eshan Barua builds multi-tenant SaaS for capital markets, healthcare, HR and retail, and runs AIPG, a software and digital content agency from Dhaka working with clients worldwide.">
+<meta name="theme-color" content="#05070a">
+<link rel="canonical" href="https://eshan-portfolio-five.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://eshan-portfolio-five.vercel.app/?lang=en">
+<link rel="alternate" hreflang="bn" href="https://eshan-portfolio-five.vercel.app/?lang=bn">
+<link rel="alternate" hreflang="x-default" href="https://eshan-portfolio-five.vercel.app/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Eshan Barua · Founder of AIPG, software engineer and systems architect">
+<meta property="og:description" content="Multi-tenant SaaS for capital markets, healthcare, HR and retail. Built in Bangladesh. Made for the world.">
+<meta property="og:url" content="https://eshan-portfolio-five.vercel.app/">
+<meta property="og:image" content="https://eshan-portfolio-five.vercel.app/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Noto+Sans+Bengali:wght@400..700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Eshan Barua","jobTitle":"Founder, AIPG (Adbhik Innovation & Product Group)","url":"https://eshan-portfolio-five.vercel.app/","image":"https://eshan-portfolio-five.vercel.app/assets/img/eshan-960.jpg","email":"mailto:baruaeshan333@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"alumniOf":{"@type":"CollegeOrUniversity","name":"North South University"},"worksFor":{"@type":"Organization","name":"AIPG","url":"https://aipgbd-nexus.vercel.app/"},"sameAs":["https://www.linkedin.com/in/eshan01","https://github.com/EshanBarua14"]}
+</script>
 </head>
-<body class="bg-[#030604] text-[#f1f5f9] selection:bg-emerald-500/30 selection:text-emerald-300 min-h-screen relative overflow-x-hidden">
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4V9.5Z"/></symbol>
+  <symbol id="i-gh" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-term" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7 5 5-5 5M12 19h7"/></symbol>
+</svg>
+<a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+<div class="bg-grid" aria-hidden="true"></div>
 
-    <!-- Ambient Lighting Orbs -->
-    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div class="absolute -top-[10%] left-[20%] w-[600px] h-[400px] bg-emerald-500/15 blur-[120px] rounded-full"></div>
-        <div class="absolute top-[35%] -right-[10%] w-[500px] h-[500px] bg-cyan-500/15 blur-[140px] rounded-full"></div>
-        <div class="absolute bottom-[10%] left-[10%] w-[500px] h-[500px] bg-teal-500/10 blur-[150px] rounded-full"></div>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Eshan Barua">
+      <span class="brand-mark" aria-hidden="true">EB</span>
+      <span>
+        <span class="brand-name" data-i18n="name">Eshan Barua</span><br>
+        <span class="brand-role" data-i18n="nav.role">Founder, AIPG · Systems architect</span>
+      </span>
+    </a>
+    <nav class="nav-links" data-i18n-attr="aria-label:nav.label" aria-label="Sections">
+      <a href="#work" data-i18n="nav.work">Products</a>
+      <a href="#experience" data-i18n="nav.exp">Experience</a>
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#credentials" data-i18n="nav.creds">Credentials</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" data-i18n-attr="aria-label:nav.lang" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        <button type="button" data-lang="bn" aria-pressed="false" lang="bn">বাংলা</button>
+      </div>
+      <a class="btn btn-sm btn-primary" href="mailto:baruaeshan333@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="nav.hire">Get in touch</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    <div>
+      <span class="pill"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.pill">Open to AI engineering, senior software and product roles</span></span>
+      <h1><span data-i18n="hero.h1a">I build the software</span> <span class="grad" data-i18n="hero.h1b">that runs businesses.</span></h1>
+      <p class="lede" data-i18n-html="hero.lede">Founder of <strong>AIPG</strong>, a software and digital content agency in Dhaka working with clients worldwide. By day I support real-time order management systems for the Dhaka and Chittagong stock exchanges at <strong>Xpert Fintech</strong>. The rest of the time I design and ship multi-tenant SaaS: a brokerage OMS, HR and payroll, hospital, procurement and retail platforms, and the AI agents that run my own company.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#work"><span data-i18n="hero.cta1">See the products</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
+        <a class="btn" href="#console"><svg aria-hidden="true"><use href="#i-term"/></svg><span data-i18n="hero.cta2">Ask the terminal</span></a>
+        <a class="btn" href="https://www.linkedin.com/in/eshan01" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-in"/></svg><span>LinkedIn</span></a>
+      </div>
+      <dl class="stats">
+        <div class="stat"><dt class="sr-only" data-i18n="stat.1l">Years in technology</dt><dd style="margin:0"><b data-i18n="stat.1v">6+ yrs</b><span data-i18n="stat.1s">in technology, since 2020</span></dd></div>
+        <div class="stat"><dt class="sr-only" data-i18n="stat.2l">Live products and sites</dt><dd style="margin:0"><b data-i18n="stat.2v">13</b><span data-i18n="stat.2s">live products and sites</span></dd></div>
+        <div class="stat"><dt class="sr-only" data-i18n="stat.3l">Verified certifications</dt><dd style="margin:0"><b data-i18n="stat.3v">38</b><span data-i18n="stat.3s">verified certifications</span></dd></div>
+        <div class="stat"><dt class="sr-only" data-i18n="stat.4l">IEEE conference papers</dt><dd style="margin:0"><b data-i18n="stat.4v">2</b><span data-i18n="stat.4s">IEEE conference papers</span></dd></div>
+      </dl>
+    </div>
+    <figure class="portrait" style="margin:0">
+      <div class="portrait-frame">
+        <picture>
+          <source type="image/webp" srcset="assets/img/eshan-480.webp 480w, assets/img/eshan-960.webp 960w" sizes="(max-width: 900px) 300px, 380px">
+          <img src="assets/img/eshan-480.jpg" srcset="assets/img/eshan-480.jpg 480w, assets/img/eshan-960.jpg 960w" sizes="(max-width: 900px) 300px, 380px" width="480" height="480" alt="Portrait of Eshan Barua" data-i18n-attr="alt:hero.alt" fetchpriority="high">
+        </picture>
+        <span class="hud tl" aria-hidden="true">ID · EB-01</span>
+        <span class="hud bl" data-i18n="hero.loc">Dhaka, Bangladesh</span>
+        <span class="hud br" aria-hidden="true">23.81°N 90.41°E</span>
+      </div>
+      <span class="corner a" aria-hidden="true"></span><span class="corner b" aria-hidden="true"></span><span class="corner c" aria-hidden="true"></span><span class="corner d" aria-hidden="true"></span>
+    </figure>
+  </div>
+</div>
+
+<!-- ============ ABOUT + TERMINAL ============ -->
+<section id="console">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="about.eye">01 · Profile</p>
+        <h2 data-i18n="about.h">Capital markets by day. Products by night.</h2>
+      </div>
+    </div>
+    <div class="term-wrap">
+      <div class="card about rv">
+        <p data-i18n-html="about.p1">I started in IT infrastructure and telecom, then moved into fintech, where I learned what production really means: an order management system that cannot go down while the market is open.</p>
+        <p data-i18n-html="about.p2">That standard is what I bring to everything I build at <strong>AIPG</strong>: tenant isolation by default, audit trails, real tests, and honest status notes. I write the requirements, design the architecture, build it, and train the people who use it.</p>
+        <dl class="kv">
+          <dt data-i18n="about.k1">Focus</dt><dd data-i18n="about.v1">Multi-tenant SaaS, fintech, AI agents</dd>
+          <dt data-i18n="about.k2">Roles</dt><dd data-i18n="about.v2">AI engineer · Senior software engineer · Product manager</dd>
+          <dt data-i18n="about.k3">Based in</dt><dd data-i18n="about.v3">Dhaka, Bangladesh · works remotely across time zones</dd>
+          <dt data-i18n="about.k4">Languages</dt><dd data-i18n="about.v4">English, Bangla</dd>
+        </dl>
+      </div>
+      <div class="card term rv">
+        <div class="term-bar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span>eshan@aipg:~</span><svg width="14" height="14" aria-hidden="true"><use href="#i-term"/></svg></div>
+        <div class="term-log" id="term-log" role="log" aria-live="polite" tabindex="0" data-i18n-attr="aria-label:term.label" aria-label="Terminal output">
+          <div class="sys" data-i18n="term.boot">eshan.os v11 · knowledge base online</div>
+          <div class="sys" data-i18n="term.hint">Type a command or tap one below. Try help.</div>
+        </div>
+        <div class="chips" id="term-chips">
+          <button type="button" data-cmd="about">about</button>
+          <button type="button" data-cmd="products">products</button>
+          <button type="button" data-cmd="stack">stack</button>
+          <button type="button" data-cmd="xpert">xpert</button>
+          <button type="button" data-cmd="research">research</button>
+          <button type="button" data-cmd="contact">contact</button>
+        </div>
+        <form class="term-form" id="term-form" autocomplete="off">
+          <span aria-hidden="true">$</span>
+          <label class="sr-only" for="term-input" data-i18n="term.input">Terminal command</label>
+          <input id="term-input" type="text" spellcheck="false" autocapitalize="off" data-i18n-attr="placeholder:term.ph" placeholder="help">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="work.eye">02 · Products</p>
+        <h2 data-i18n="work.h">Shipped systems, not side projects.</h2>
+      </div>
+      <p data-i18n="work.sub">Each one has a live demo. Most repositories are private because they are commercial products; I can walk you through the code on a call.</p>
     </div>
 
-    <!-- Background Canvas Animation -->
-    <canvas id="bg-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-45"></canvas>
-
-    <!-- Header Navbar -->
-    <header class="sticky top-0 z-50 backdrop-blur-2xl bg-[#030604]/90 border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3.5 group cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-400 via-teal-500 to-cyan-600 flex items-center justify-center font-extrabold text-black text-base shadow-lg shadow-emerald-500/25 group-hover:scale-105 transition-transform">
-                    EB
-                </div>
-                <div>
-                    <h1 class="font-bold tracking-tight text-white text-sm md:text-base">Eshan Barua</h1>
-                    <p class="text-[11px] text-emerald-400 font-mono tracking-wider font-semibold">SOFTWARE SUPPORT ENGINEER // SYSTEMS ARCHITECT</p>
-                </div>
-            </div>
-
-            <div class="flex items-center space-x-3">
-                <a href="https://www.linkedin.com/in/eshan01" target="_blank" rel="noopener noreferrer" class="glass-button hidden sm:flex items-center space-x-2 text-white px-4 py-2 rounded-xl text-xs font-semibold">
-                    <i data-lucide="linkedin" class="w-4 h-4 text-emerald-400"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="mailto:baruaeshan333@gmail.com" class="glass-button bg-emerald-500/10 border-emerald-500/30 flex items-center space-x-2 text-emerald-400 px-4 py-2 rounded-xl text-xs font-semibold hover:bg-emerald-500/20">
-                    <i data-lucide="mail" class="w-4 h-4"></i>
-                    <span>Email Eshan</span>
-                </a>
-            </div>
+    <div class="bento">
+      <!-- OMS -->
+      <article class="card p hero-p rv">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="p-top"><span class="tag" data-i18n="oms.tag">Capital markets · Flagship</span><span class="status" data-i18n="st.live">Live demo</span></div>
+          <h3>BdStockOMS</h3>
+          <p class="sum" data-i18n="oms.sum">A multi-tenant order management system for Bangladeshi brokerage houses trading on the DSE and CSE.</p>
+          <ul>
+            <li data-i18n="oms.b1">KYC, cascading risk limits, settlement, commission and corporate actions in one platform</li>
+            <li data-i18n="oms.b2">13 roles with strict tenant isolation: every request re-derives the brokerage from the database</li>
+            <li data-i18n="oms.b3">Real-time order and portfolio updates over SignalR</li>
+            <li data-i18n="oms.b4">Companion matching engine in C: 11 order types, price-time priority, risk bands</li>
+          </ul>
+          <div class="stack"><span>.NET 8</span><span>React 18</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>SignalR</span><span>C17</span></div>
+          <div class="links"><a href="https://bd-stock-oms.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
         </div>
-    </header>
+        <figure style="margin:0">
+          <svg class="arch" viewBox="0 0 520 330" role="img" data-i18n-attr="aria-label:oms.arch" aria-label="Architecture: brokerage tenants connect to the OMS core, which talks to the matching engine and, through a FIX gateway, to the exchanges.">
+            <g>
+              <rect class="box" x="16" y="30" width="128" height="52" rx="10"/><text x="80" y="53" text-anchor="middle" class="t-strong" data-i18n="arch.ba">Broker A</text><text x="80" y="70" text-anchor="middle" data-i18n="arch.tenant">tenant</text>
+              <rect class="box" x="16" y="139" width="128" height="52" rx="10"/><text x="80" y="162" text-anchor="middle" class="t-strong" data-i18n="arch.bb">Broker B</text><text x="80" y="179" text-anchor="middle" data-i18n="arch.tenant">tenant</text>
+              <rect class="box" x="16" y="248" width="128" height="52" rx="10"/><text x="80" y="271" text-anchor="middle" class="t-strong" data-i18n="arch.inv">Investor</text><text x="80" y="288" text-anchor="middle" data-i18n="arch.self">self-scoped</text>
+              <rect class="box core" x="196" y="104" width="140" height="122" rx="12"/>
+              <text x="266" y="136" text-anchor="middle" class="t-strong" data-i18n="arch.core">OMS core</text>
+              <text x="266" y="158" text-anchor="middle">RMS · KYC</text>
+              <text x="266" y="176" text-anchor="middle" data-i18n="arch.settle">settlement</text>
+              <text x="266" y="194" text-anchor="middle" data-i18n="arch.audit">audit · SignalR</text>
+              <rect class="box" x="384" y="56" width="122" height="60" rx="10"/><text x="445" y="82" text-anchor="middle" class="t-strong" data-i18n="arch.match">Matching</text><text x="445" y="100" text-anchor="middle" data-i18n="arch.engine">C17 engine</text>
+              <rect class="box" x="384" y="214" width="122" height="60" rx="10"/><text x="445" y="240" text-anchor="middle" class="t-strong" data-i18n="arch.fix">FIX gateway</text><text x="445" y="258" text-anchor="middle">DSE · CSE</text>
+              <path class="wire" d="M144 56 C170 56 170 140 196 140"/><path class="wire" d="M144 165 H196"/><path class="wire" d="M144 274 C170 274 170 190 196 190"/>
+              <path class="wire" d="M336 140 C360 140 360 86 384 86"/><path class="wire" d="M336 190 C360 190 360 244 384 244"/>
+              <path class="flow" d="M144 56 C170 56 170 140 196 140"/><path class="flow" d="M144 165 H196"/><path class="flow" d="M144 274 C170 274 170 190 196 190"/>
+              <path class="flow" d="M336 140 C360 140 360 86 384 86"/><path class="flow" d="M336 190 C360 190 360 244 384 244"/>
+            </g>
+          </svg>
+          <figcaption class="arch-cap" data-i18n="oms.cap">How the pieces connect. The FIX gateway is a working prototype; exchange adapters wait on the official venue specifications.</figcaption>
+        </figure>
+      </article>
 
-    <main class="max-w-7xl mx-auto px-6 pt-12 pb-12 relative z-10">
-        <!-- Hero Section -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <div class="lg:col-span-7 space-y-8 animate-fade-in">
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                    <!-- Profile Picture Frame -->
-                    <div class="relative group shrink-0">
-                        <div class="absolute -inset-2 bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-500 rounded-3xl blur-md opacity-75 group-hover:opacity-100 transition duration-500"></div>
-                        <div class="relative w-36 h-36 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border-2 border-emerald-400/80 bg-[#0d1612] shadow-2xl flex items-center justify-center">
-                            <img src="eshan.jpeg" alt="Eshan Barua" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop';">
-                        </div>
-                    </div>
+      <!-- HRMS -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="hr.tag">HR &amp; payroll</span><span class="status" data-i18n="st.live">Live demo</span></div>
+        <h3 data-i18n="hr.name">E-HR · HRMS</h3>
+        <p class="sum" data-i18n="hr.sum">Cloud HR and payroll built around Bangladeshi rules.</p>
+        <ul>
+          <li data-i18n="hr.b1">NBR income tax and TDS, festival bonuses, biometric and GPS attendance</li>
+          <li data-i18n="hr.b2">1,325 automated tests passing and 70 screens loading on seeded demo data (verified November 2026)</li>
+        </ul>
+        <div class="stack"><span>.NET 8</span><span>React 19</span><span>PostgreSQL 16</span><span>SignalR</span><span>Docker</span></div>
+        <div class="links"><a href="https://e-hr-one.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
+      </article>
 
-                    <div>
-                        <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-mono mb-3 shadow-sm">
-                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                            <span>Open for Opportunities & Software Engineering Roles</span>
-                        </div>
-                        <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Eshan Barua</h2>
-                        <p class="text-xs text-slate-400 font-mono mt-1">Software Support Engineer @ Xpert Fintech Ltd.</p>
-                    </div>
-                </div>
+      <!-- HMS -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="hms.tag">Healthcare</span><span class="status" data-i18n="st.live">Live demo</span></div>
+        <h3 data-i18n="hms.name">SEROSA · Hospital management</h3>
+        <p class="sum" data-i18n="hms.sum">A multi-tenant hospital management platform, demo-ready with Bangladeshi sample data.</p>
+        <ul>
+          <li data-i18n="hms.b1">29 modules with a full English and Bangla interface</li>
+          <li data-i18n="hms.b2">335 automated tests across frontend and backend; type-checked clean</li>
+        </ul>
+        <div class="stack"><span>React</span><span>TypeScript</span><span>Express</span><span>PostgreSQL</span></div>
+        <div class="links"><a href="https://hospital-management-system-beta-olive.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
+      </article>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-                    Architecting <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">Enterprise Systems</span> & Open for Hire.
-                </h1>
+      <!-- VMS -->
+      <article class="card p rv">
+        <div class="p-top"><span class="tag" data-i18n="vms.tag">Procurement</span><span class="status" data-i18n="st.live">Live demo</span></div>
+        <h3 data-i18n="vms.name">Vendor management (VMS)</h3>
+        <p class="sum" data-i18n="vms.sum">Procurement aligned with Bangladesh's PPR 2008 and VAT Act 2012: automatic VAT and TDS, two-envelope bid evaluation and an immutable audit trail.</p>
+        <div class="stack"><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span></div>
+        <div class="links"><a href="https://vendor-management-system-vms.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
+      </article>
 
-                <p class="text-base md:text-lg text-slate-300 max-w-2xl font-light leading-relaxed">
-                    Software Support Engineer specializing in real-time Order Management Systems (OMS) for capital markets. Alongside enterprise operations at <strong class="text-white font-semibold">Xpert Fintech Ltd.</strong>, I architect production-grade SaaS platforms and explore advanced AI workflows. I am currently open to suitable professional software engineering and technical roles.
-                </p>
+      <!-- Store -->
+      <article class="card p rv">
+        <div class="p-top"><span class="tag" data-i18n="sms.tag">Retail · POS</span><span class="status" data-i18n="st.live">Live demo</span></div>
+        <h3 data-i18n="sms.name">Store management</h3>
+        <p class="sum" data-i18n="sms.sum">Multi-tenant POS and stock for grocery, pharmacy and retail, with customer loyalty and an AI store assistant built on Claude.</p>
+        <div class="stack"><span>React 19</span><span>Express</span><span>Supabase</span><span>Claude API</span></div>
+        <div class="links"><a href="https://aipgbd-sms.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
+      </article>
 
-                <div class="flex flex-wrap gap-4 pt-2">
-                    <a href="#verification-hub" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-7 py-3.5 rounded-xl transition-all shadow-lg shadow-emerald-500/25 flex items-center space-x-2.5 text-sm hover:scale-105">
-                        <span>Verify Credentials & Hub</span>
-                        <i data-lucide="shield-check" class="w-4 h-4"></i>
-                    </a>
-                    <button onclick="focusTerminal()" class="glass-button text-white font-semibold px-7 py-3.5 rounded-xl transition-all flex items-center space-x-2.5 text-sm hover:scale-105">
-                        <i data-lucide="terminal" class="w-4 h-4 text-emerald-400"></i>
-                        <span>Interactive Knowledge Base</span>
-                    </button>
-                </div>
+      <!-- DMS -->
+      <article class="card p rv">
+        <div class="p-top"><span class="tag" data-i18n="dms.tag">Documents · AI</span><span class="status" data-i18n="st.live">Live demo</span></div>
+        <h3 data-i18n="dms.name">DocForge · DMS</h3>
+        <p class="sum" data-i18n="dms.sum">Document management with camera scanning, a PDF toolkit, e-signatures, AI document Q&amp;A and OCR in English and Bangla.</p>
+        <div class="stack"><span>React 19</span><span>Node.js</span><span>Firebase</span><span>Gemini</span></div>
+        <div class="links"><a href="https://doc-forge-chi.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
+      </article>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-white/10">
-                    <div class="glass-panel p-5 rounded-2xl">
-                        <div class="text-2xl font-bold text-white font-mono">5+ Years</div>
-                        <div class="text-xs text-slate-400 mt-1">Technical Experience</div>
-                    </div>
-                    <div class="glass-panel p-5 rounded-2xl">
-                        <div class="text-2xl font-bold text-white font-mono">7+ Builds</div>
-                        <div class="text-xs text-slate-400 mt-1">SaaS & AI Platforms</div>
-                    </div>
-                    <div class="glass-panel p-5 rounded-2xl">
-                        <div class="text-2xl font-bold text-white font-mono">Fintech Core</div>
-                        <div class="text-xs text-slate-400 mt-1">Capital Market Systems</div>
-                    </div>
-                    <div class="glass-panel p-5 rounded-2xl">
-                        <div class="text-2xl font-bold text-white font-mono">38 Badges</div>
-                        <div class="text-xs text-slate-400 mt-1">Verified Certifications</div>
-                    </div>
-                </div>
-            </div>
+      <!-- Support desk -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="sd.tag">Client support</span><span class="status" data-i18n="st.live">Live demo</span></div>
+        <h3 data-i18n="sd.name">AIPG Support Desk</h3>
+        <p class="sum" data-i18n="sd.sum">Ticketing for software clients: five roles, email and SMS alerts, canned replies and service reports.</p>
+        <div class="stack"><span>ASP.NET</span><span>C#</span><span>SQL Server</span></div>
+        <div class="links"><a href="https://sd-ebon.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
+      </article>
 
-            <!-- Terminal Knowledge Base Widget -->
-            <div class="lg:col-span-5 animate-fade-in" style="animation-delay: 0.2s;">
-                <div class="glass-panel rounded-2xl shadow-2xl overflow-hidden border border-white/15">
-                    <div class="bg-[#121c18]/90 px-4 py-3.5 border-b border-white/10 flex items-center justify-between">
-                        <div class="flex items-center space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                            <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
-                        </div>
-                        <div class="text-xs text-slate-300 font-mono font-semibold">eshan@enterprise-base:~</div>
-                        <i data-lucide="terminal" class="w-3.5 h-3.5 text-emerald-400"></i>
-                    </div>
+      <!-- E-commerce -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="ec.tag">Commerce</span><span class="status" data-i18n="st.live">Live demo</span></div>
+        <h3 data-i18n="ec.name">D2C e-commerce</h3>
+        <p class="sum" data-i18n="ec.sum">Storefront, admin and courier apps on one API, with cash-on-delivery risk scoring, OTP, returns and a Bangla and English interface. 86 automated tests.</p>
+        <div class="stack"><span>.NET 8</span><span>PostgreSQL</span><span>React</span></div>
+        <div class="links"><a href="https://e-commerce-six-tawny-29.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><span class="private"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="lnk.private">Private repo · walkthrough on request</span></span></div>
+      </article>
 
-                    <div id="terminal-logs" class="p-5 h-[340px] overflow-y-auto font-mono text-xs space-y-3 text-slate-300">
-                        <div class="text-emerald-400 font-bold">ESHAN BARUA // PROFESSIONAL KNOWLEDGE BASE v10.6 ONLINE</div>
-                        <div>Ask anything about my background, career, documentation, UAT, or job availability!</div>
-                        <div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span>, <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">xpert</span>, or <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">stack</span> to inspect...</div>
-                    </div>
+      <!-- Brain -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="brain.tag">AI operations</span><span class="status" data-i18n="st.inuse">Runs AIPG daily</span></div>
+        <h3>AIPG Brain</h3>
+        <p class="sum" data-i18n="brain.sum">The AI back office that runs my company: 74 specialist agents in an org chart, with playbooks, skills and a ticket system.</p>
+        <ul>
+          <li data-i18n="brain.b1">Agents draft sales replies, content, proposals and code; I approve anything that leaves the building</li>
+          <li data-i18n="brain.b2">Hard rules: no invented facts, no publishing, paying or deploying without a human yes</li>
+        </ul>
+        <div class="stack"><span>Claude Code</span><span>Agents</span><span>Python</span><span>Vercel</span></div>
+        <div class="links"><a href="https://aipgbrain.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.visit">Visit</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
 
-                    <form onsubmit="handleTerminalCommand(event)" class="border-t border-white/10 bg-[#030604] p-3.5 flex items-center space-x-2.5">
-                        <span class="text-emerald-400 font-mono text-xs">$</span>
-                        <input type="text" id="terminal-input" placeholder="try 'about', 'xpert', 'uat', 'stack'..." class="bg-transparent border-none outline-none text-xs text-white font-mono w-full focus:ring-0">
-                    </form>
-                </div>
-            </div>
+      <!-- Reach -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="reach.tag">AI sales agent</span><span class="status amber" data-i18n="st.pilot">In pilot at AIPG</span></div>
+        <h3>AIPG Reach</h3>
+        <p class="sum" data-i18n="reach.sum">One AI agent for sales and client care across website chat, WhatsApp, Messenger, Instagram, YouTube comments and phone.</p>
+        <ul>
+          <li data-i18n="reach.b1">Quotes only the business's own price list; refunds, complaints and custom quotes go to a person</li>
+          <li data-i18n="reach.b2">One inbox for every channel; each module is sold under a signed licence</li>
+        </ul>
+        <div class="stack"><span>Claude API</span><span>Supabase</span><span>Webhooks</span><span>Ed25519</span></div>
+        <div class="links"><a href="https://aipgbd-nexus.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.aipg">See it on the AIPG site</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
 
+      <!-- AIPG site -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="nx.tag">Company website</span><span class="status" data-i18n="st.liveSite">Live</span></div>
+        <h3 data-i18n="nx.name">AIPG website</h3>
+        <p class="sum" data-i18n="nx.sum">The agency's site for AIPG Studios and AIPG Systems, in nine languages, with prices in 11 currencies and a built-in AI lead assistant.</p>
+        <div class="stack"><span>React 18</span><span>Supabase</span><span>Vercel</span></div>
+        <div class="links"><a href="https://aipgbd-nexus.vercel.app" target="_blank" rel="noopener"><span data-i18n="lnk.visit">Visit</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <!-- Website kit -->
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="kit.tag">Website kit · sample</span><span class="status" data-i18n="st.liveSite">Live</span></div>
+        <h3 data-i18n="kit.name">Nira · client site sample</h3>
+        <p class="sum" data-i18n="kit.sum">Made with the AIPG website kit: one content file per client becomes a fast Bangla and English site with no framework, structured data and security headers. Nira is a fictional brand made for the demo.</p>
+        <div class="stack"><span>Node.js</span><span>HTML</span><span>CSS</span><span>schema.org</span></div>
+        <div class="links"><a href="https://aipgbd-nexus.vercel.app/samples/nira/" target="_blank" rel="noopener"><span data-i18n="lnk.sample">View sample</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+    </div>
+
+    <div class="sec-head rv" style="margin:56px 0 20px">
+      <div><p class="eyebrow" data-i18n="lab.eye">Lab</p></div>
+    </div>
+    <div class="bento">
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="job.tag">Autonomous agent · open source</span></div>
+        <h3>JobAgent</h3>
+        <p class="sum" data-i18n="job.sum">A self-hosted job search agent: searches several job boards, ranks roles against a CV with TF-IDF, automates the browser with Playwright and keeps all data local in SQLite.</p>
+        <div class="stack"><span>Python</span><span>FastAPI</span><span>Playwright</span><span>SQLite</span></div>
+        <div class="links"><a href="https://job-finder-agent-eyqr.onrender.com/" target="_blank" rel="noopener"><span data-i18n="lnk.demo">Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="sep" aria-hidden="true"></span><a href="https://github.com/EshanBarua14/Job-Finder-Agent" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-gh"/></svg><span data-i18n="lnk.code">Code</span></a></div>
+      </article>
+      <article class="card p wide rv">
+        <div class="p-top"><span class="tag" data-i18n="vx.tag">Digital services</span></div>
+        <h3>Vortex AI Studio</h3>
+        <p class="sum" data-i18n="vx.sum">A local storefront for AI subscriptions, hosting, domains and SSL, with bKash and Nagad payments and activation in 5 to 15 minutes.</p>
+        <div class="stack"><span>HTML</span><span>JavaScript</span><span>bKash</span><span>Nagad</span></div>
+        <div class="links"><a href="https://vortex-ai-studio-eight.vercel.app/" target="_blank" rel="noopener"><span data-i18n="lnk.visit">Visit</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="exp.eye">03 · Experience</p>
+        <h2 data-i18n="exp.h">From network rooms to trading floors.</h2>
+      </div>
+      <p data-i18n="exp.sub">Telecom, enterprise IT and fintech, each one raising the bar for uptime and rigour.</p>
+    </div>
+    <div class="timeline">
+      <article class="job rv">
+        <div class="job-when"><b data-i18n="j0.when">2023 – Present</b><span data-i18n="j0.where">Dhaka · remote</span></div>
+        <div>
+          <h3 data-i18n="j0.role">Founder &amp; lead architect</h3>
+          <p class="org" data-i18n="j0.org">AIPG · Adbhik Innovation &amp; Product Group</p>
+          <ul>
+            <li data-i18n="j0.b1">Run a one-stop agency for brand films and business software, serving clients in Bangladesh and abroad</li>
+            <li data-i18n="j0.b2">Design, build and deploy every product above, end to end: requirements, architecture, code, tests and rollout</li>
+            <li data-i18n="j0.b3">Built AIPG Brain, the agent system that drafts the company's daily sales, content and engineering work</li>
+          </ul>
         </div>
+      </article>
+      <article class="job rv">
+        <div class="job-when"><b data-i18n="j1.when">Aug 2023 – Present</b><span data-i18n="j1.type">Full-time</span></div>
+        <div>
+          <h3 data-i18n="j1.role">Software support engineer</h3>
+          <p class="org">Xpert Fintech Ltd.</p>
+          <ul>
+            <li data-i18n="j1.b1">L2/L3 production support for real-time order management systems serving the Dhaka and Chittagong stock exchanges</li>
+            <li data-i18n="j1.b2">Write BRDs, SRSs and user acceptance test matrices</li>
+            <li data-i18n="j1.b3">Train users and present to stakeholders on fintech platforms including eKYC and the customer support management system</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job rv">
+        <div class="job-when"><b data-i18n="j2.when">Oct 2021 – Aug 2023</b><span data-i18n="j2.type">Contract</span></div>
+        <div>
+          <h3 data-i18n="j2.role">System engineer (RAN) / IT engineer</h3>
+          <p class="org">Grameenphone Ltd.</p>
+          <ul>
+            <li data-i18n="j2.b1">Supported enterprise IT infrastructure, internal networks and workstations across corporate operations</li>
+            <li data-i18n="j2.b2">Delivered deployments in the Secure LAN Migration project with zero operational interruption</li>
+            <li data-i18n="j2.b3">Handled L2 escalations and maintained network security configurations</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job rv">
+        <div class="job-when"><b data-i18n="j3.when">May 2020 – Aug 2021</b><span data-i18n="j1.type">Full-time</span></div>
+        <div>
+          <h3 data-i18n="j3.role">IT executive</h3>
+          <p class="org">Zenith Engineering Bangladesh</p>
+          <ul>
+            <li data-i18n="j3.b1">Ran IT infrastructure, hardware, internal networks and operational software</li>
+            <li data-i18n="j3.b2">Owned backups, system monitoring and troubleshooting</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-        <!-- Official Verification & Professional Identity Hub -->
-        <section id="verification-hub" class="mt-20">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400 animate-bounce">
-                    <i data-lucide="shield-check" class="w-5 h-5"></i>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-white tracking-tight">Official Verification & Candidate Hub</h2>
-                    <p class="text-xs text-slate-400 font-mono">Verifiable credentials for AI Engineering, Software Development & Product Leadership</p>
-                </div>
-            </div>
+<!-- ============ STACK ============ -->
+<section id="stack">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="stk.eye">04 · Stack</p>
+        <h2 data-i18n="stk.h">The tools I ship with.</h2>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="card sk rv"><h3 data-i18n="stk.1">Languages &amp; frameworks</h3><div class="stack"><span>C#</span><span>ASP.NET Core</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>Python</span><span>FastAPI</span><span>Java</span><span>C</span><span>Tailwind CSS</span></div></div>
+      <div class="card sk rv"><h3 data-i18n="stk.2">Data &amp; real-time</h3><div class="stack"><span>PostgreSQL</span><span>SQL Server</span><span>Redis</span><span>Supabase</span><span>SQLite</span><span>Firebase</span><span>SignalR</span><span>EF Core</span></div></div>
+      <div class="card sk rv"><h3 data-i18n="stk.3">AI &amp; automation</h3><div class="stack"><span>Claude Code</span><span>Claude API</span><span>MCP</span><span>Gemini</span><span>OpenAI</span><span>Playwright</span><span>Selenium</span><span>ElevenLabs</span><span>Suno</span></div></div>
+      <div class="card sk rv"><h3 data-i18n="stk.4">Cloud &amp; delivery</h3><div class="stack"><span>Docker</span><span>Vercel</span><span>Render</span><span>AWS Lambda</span><span>GitHub Actions</span><span>Git</span></div></div>
+      <div class="card sk rv"><h3 data-i18n="stk.5">Enterprise IT</h3><p data-i18n="stk.5p">Microsoft 365 and Intune, Entra ID identity, Exchange Online, cross-tenant sync, LAN migration and SLA-driven incident response.</p></div>
+      <div class="card sk rv"><h3 data-i18n="stk.6">Product &amp; delivery</h3><p data-i18n="stk.6p">BRD and SRS writing, UAT, API documentation, Agile sprints in Jira and Confluence, stakeholder training.</p></div>
+    </div>
+  </div>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-                <div class="hub-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] font-mono px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/35">Direct Channel</span>
-                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Hire / Interview Eshan</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Ready to contribute as an AI Engineer, Senior Software Engineer, or Product Manager. Reach out directly for opportunities.
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-white/10 mt-auto">
-                        <a href="mailto:baruaeshan333@gmail.com" class="inline-flex items-center justify-between w-full bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 px-4 py-2.5 rounded-xl text-xs font-semibold transition-all hover:scale-[1.01]">
-                            <span>Email Directly</span>
-                            <i data-lucide="mail" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
+<!-- ============ RESEARCH + EDUCATION ============ -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="res.eye">05 · Research &amp; education</p>
+        <h2 data-i18n="res.h">Published, then shipped.</h2>
+      </div>
+    </div>
+    <div class="two">
+      <article class="card paper rv">
+        <span class="tag">IEEE · ICCIT 2021</span>
+        <h3>Development of Web-Based System for Essential Services During the COVID-19 Pandemic</h3>
+        <p data-i18n="res.p1">A multi-tenant platform that coordinated nurses and volunteers, essential shopping and health consultations during the pandemic, with verified certificate workflows.</p>
+      </article>
+      <article class="card paper rv">
+        <span class="tag">IEEE · ICCMC 2021</span>
+        <h3>Bid &amp; Buy: An Effective Online-Based Platform for Client and Vendor</h3>
+        <p data-i18n="res.p2">An online bidding system that makes buying and selling simpler for businesses and government bodies.</p>
+      </article>
+    </div>
+    <div class="edu-grid">
+      <article class="card edu rv">
+        <span class="tag" data-i18n="edu.u">University</span>
+        <h3 data-i18n="edu.nsu">North South University</h3>
+        <p data-i18n="edu.nsu.d">BSc in Computer Science &amp; Engineering</p>
+        <span class="meta" data-i18n="edu.nsu.y">2015 – 2019</span>
+      </article>
+      <article class="card edu rv">
+        <span class="tag" data-i18n="edu.h">Higher secondary</span>
+        <h3 data-i18n="edu.ndc">Notre Dame College</h3>
+        <p data-i18n="edu.ndc.d">HSC, Science · Assistant General Secretary, Notre Dame Science Club</p>
+        <span class="meta" data-i18n="edu.ndc.y">2011 – 2013</span>
+      </article>
+      <article class="card edu rv">
+        <span class="tag" data-i18n="edu.s">Secondary</span>
+        <h3 data-i18n="edu.kpb">KPB School &amp; College</h3>
+        <p data-i18n="edu.kpb.d">SSC, Science · Founding panel member, KPBSC Science Club</p>
+        <span class="meta" data-i18n="edu.kpb.y">2001 – 2011</span>
+      </article>
+    </div>
+  </div>
+</section>
 
-                <div class="hub-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] font-mono px-2 py-0.5 rounded-md bg-cyan-500/15 text-cyan-300 border border-cyan-500/35">Education</span>
-                            <i data-lucide="graduation-cap" class="w-4 h-4 text-cyan-400"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-1">North South University</h3>
-                        <p class="text-xs text-slate-400 font-mono mb-2.5">Bachelor of Science - BS, Computer Science & Engineering</p>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Official institution verification portal for academic records and degree accreditation.
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-white/10 mt-auto">
-                        <a href="https://www.northsouth.edu" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full glass-button text-white px-4 py-2.5 rounded-xl text-xs font-semibold">
-                            <span>Verify at North South University</span>
-                            <i data-lucide="external-link" class="w-4 h-4 text-cyan-400"></i>
-                        </a>
-                    </div>
-                </div>
+<!-- ============ CREDENTIALS ============ -->
+<section id="credentials">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow" data-i18n="cr.eye">06 · Credentials</p>
+        <h2 data-i18n="cr.h">38 certifications, each one checkable.</h2>
+      </div>
+      <p data-i18n="cr.sub">Most cards open the issuer's own verification page. The rest link to the issuer with the credential ID shown.</p>
+    </div>
+    <div class="cert-tools" role="group" data-i18n-attr="aria-label:cr.filter" aria-label="Filter certifications">
+      <button type="button" data-f="all" aria-pressed="true" data-i18n="cr.all">All</button>
+      <button type="button" data-f="anthropic" aria-pressed="false">Anthropic</button>
+      <button type="button" data-f="linkedin" aria-pressed="false">LinkedIn Learning</button>
+      <button type="button" data-f="coursera" aria-pressed="false">Coursera</button>
+      <button type="button" data-f="other" aria-pressed="false" data-i18n="cr.other">PMI, Canva &amp; others</button>
+    </div>
+    <div class="certs" id="certs">
+      <a class="cert" href="https://academy.claude.com/verify/9a277d7a87d729e12358ddf8b3057bcf" target="_blank" rel="noopener" data-g="anthropic"><span class="c-meta"><span>Anthropic</span><time class="c-date" datetime="2026-09">Sep 2026</time></span><span class="c-title">Claude Academy: Introduction to Model Context Protocol</span><span class="c-meta"><span class="mono">9a277d7a87d729e12358ddf8b3057bcf</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://academy.claude.com/verify/d0bc85d7c29b22f399f3a1f6ca36dcc1" target="_blank" rel="noopener" data-g="anthropic"><span class="c-meta"><span>Anthropic</span><time class="c-date" datetime="2026-09">Sep 2026</time></span><span class="c-title">Claude Academy: Claude Code in Action</span><span class="c-meta"><span class="mono">d0bc85d7c29b22f399f3a1f6ca36dcc1</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://academy.claude.com/verify/b21d7e2d6e44881181c8146f6d1b7b96" target="_blank" rel="noopener" data-g="anthropic"><span class="c-meta"><span>Anthropic</span><time class="c-date" datetime="2026-09">Sep 2026</time></span><span class="c-title">Claude Academy: Claude Platform 101</span><span class="c-meta"><span class="mono">b21d7e2d6e44881181c8146f6d1b7b96</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://academy.claude.com/verify/0ce41199eabe11062114477b6fd0564d" target="_blank" rel="noopener" data-g="anthropic"><span class="c-meta"><span>Anthropic</span><time class="c-date" datetime="2026-09">Sep 2026</time></span><span class="c-title">Claude Academy: Introduction to Claude Cowork</span><span class="c-meta"><span class="mono">0ce41199eabe11062114477b6fd0564d</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://academy.claude.com/verify/4777cb3bb06f16bd17c9e938c3dc2524" target="_blank" rel="noopener" data-g="anthropic"><span class="c-meta"><span>Anthropic</span><time class="c-date" datetime="2026-09">Sep 2026</time></span><span class="c-title">Claude Academy: Claude Code 101</span><span class="c-meta"><span class="mono">4777cb3bb06f16bd17c9e938c3dc2524</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://academy.claude.com/verify/89e4e552a6792d80f94fe6c159c27794" target="_blank" rel="noopener" data-g="anthropic"><span class="c-meta"><span>Anthropic</span><time class="c-date" datetime="2026-09">Sep 2026</time></span><span class="c-title">Claude Academy: Claude 101</span><span class="c-meta"><span class="mono">89e4e552a6792d80f94fe6c159c27794</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.canva.com" target="_blank" rel="noopener" data-g="other"><span class="c-meta"><span>Canva</span><time class="c-date" datetime="2026-08">Aug 2026</time></span><span class="c-title">Graphic Design Essentials</span><span class="c-meta"><span class="mono">791f89</span></span><span class="c-verify"><span data-i18n="cr.site">Issuer website</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.pmi.org" target="_blank" rel="noopener" data-g="other"><span class="c-meta"><span>Project Management Institute</span><time class="c-date" datetime="2026-08">Aug 2026</time></span><span class="c-title">Practical Application of Generative AI for Project Managers</span><span class="c-meta"><span class="mono">776570171860</span></span><span class="c-verify"><span data-i18n="cr.site">Issuer website</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.pmi.org" target="_blank" rel="noopener" data-g="other"><span class="c-meta"><span>Project Management Institute</span><time class="c-date" datetime="2026-08">Aug 2026</time></span><span class="c-title">Talking to AI: Prompt Engineering for Project Managers</span><span class="c-meta"><span class="mono">563870170883</span></span><span class="c-verify"><span data-i18n="cr.site">Issuer website</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/7ef00e3a60933da10a209eb5591ebac976eb2c2db5176468b61368d74272d3a4" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">React Essential Training &amp; PWA Architecture</span><span class="c-meta"><span class="mono">7ef00e3a...2d3a4</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/e47a38d051603c9644edb7e278220238ecb67eb649e2108ed971f53c718ec872" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">React: Building Progressive Web Apps (PWAs)</span><span class="c-meta"><span class="mono">e47a38d051603...8ec872</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/59a8bf9761fe0b630865b2c3d3b7c530a5fd10a2fc40207de73a833a87c56aac" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">NoSQL Essential Training</span><span class="c-meta"><span class="mono">59a8bf9761fe...87c56aac</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/509d969060ae0f552785f4780b47bc9d66917f46f38f017cb5c066936989c8e2" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Creating API Documentation</span><span class="c-meta"><span class="mono">509d969060ae...6989c8e2</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/5c8d79a83417e0c0859c3d71e19f3479c1f2c01e5e9a23ece11a90fe4be2d973" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Slack Essential Training</span><span class="c-meta"><span class="mono">5c8d79a83417...be2d973</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/d855a8a85adf364a6b549d68e99a7142e436f8006bae58410610bf17fcc67c66" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>AWS / LinkedIn</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Building Serverless Applications in AWS</span><span class="c-meta"><span class="mono">d855a8a85adf...fcc67c66</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/cb0c43d7978b96c4c477f211c07e08a6ce7b5b5c871769f3ef3d216fa35d50bb" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Introduction to NoSQL</span><span class="c-meta"><span class="mono">cb0c43d7978b...35d50bb</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/da11ace5a653ecf8e61d5d0418195eb87d2471147b707a0dcf0dc6871966c0fe" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Creating a Responsive Web Design</span><span class="c-meta"><span class="mono">da11ace5a653...1966c0fe</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/737ac2716e175dc515a616106c9ef43a30b785504c13a3ff07ad00512fd9a3dd" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>PMI</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Learning Confluence</span><span class="c-meta"><span class="mono">737ac2716e17...2fd9a3dd</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/7934c14c519ec4c63539d719a2258580328d5586e1651fdb48d87c06f35ac102" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Learning Jira: Sprints, Bugs &amp; Tracking</span><span class="c-meta"><span class="mono">7934c14c519e...06f35ac102</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/9491334dece355fdd5324fde631a645b017ce5d82f3311c18e0c0622435e8ffd" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Prompt Engineering: How to Talk to the AIs</span><span class="c-meta"><span class="mono">9491334dece3...22435e8ffd</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/d644caf43f179325727aad3af63162d1a40497242b1e19216a1d4d9f4cc432f" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Automated Software Refactoring with OpenRewrite</span><span class="c-meta"><span class="mono">d644caf43f17...9f4cc432f</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/8ce04fc4ba39d92cf8871b403c3b242d61684236236ba4831d35d943860a4b67" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>CompTIA</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Agile Software Development</span><span class="c-meta"><span class="mono">8ce04fc4ba39...3860a4b67</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/83b0b5486dea6b4bce592c940b334be9daa66f2eb7f222a8a4a98b24c26a8bbf" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">WordPress: Mastering Full Site Editing</span><span class="c-meta"><span class="mono">83b0b5486dea...26a8bbf</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/067e3b0dd55347a16ddb2a30a843a55adf55cec587218ab8827afc702a3fa3e5" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>LinkedIn Learning</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Canva for Web and Digital Design Projects</span><span class="c-meta"><span class="mono">067e3b0dd553...702a3fa3e5</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/verify/9f27d6f9517c00a09cbcda11c5290027586f498572e228dca05db4fecd0a0f78" target="_blank" rel="noopener" data-g="linkedin"><span class="c-meta"><span>PMI</span><time class="c-date" datetime="2025-11">Nov 2025</time></span><span class="c-title">Communicating with Confidence</span><span class="c-meta"><span class="mono">9f27d6f9517c...4fecd0a0f78</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/KS26F7UJPVTL" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>Coursera</span><time class="c-date" datetime="2025-06">Jun 2025</time></span><span class="c-title">Introduction to Selenium</span><span class="c-meta"><span class="mono">KS26F7UJPVTL</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/DN2MXOVCAUY1" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>Meta</span><time class="c-date" datetime="2025-06">Jun 2025</time></span><span class="c-title">Introduction to Front-End Development</span><span class="c-meta"><span class="mono">DN2MXOVCAUY1</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/CXX8MIOY02E3" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>IBM</span><time class="c-date" datetime="2025-05">May 2025</time></span><span class="c-title">Introduction to Business Analysis</span><span class="c-meta"><span class="mono">CXX8MIOY02E3</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/21V9HHM3BGI1" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>IBM</span><time class="c-date" datetime="2025-05">May 2025</time></span><span class="c-title">Introduction to DevOps</span><span class="c-meta"><span class="mono">21V9HHM3BGI1</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/R5ZRZS4CNH6B" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>IBM</span><time class="c-date" datetime="2025-04">Apr 2025</time></span><span class="c-title">Developing Websites and Front-Ends with Bootstrap</span><span class="c-meta"><span class="mono">R5ZRZS4CNH6B</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/U90PELINTPU1" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>Johns Hopkins</span><time class="c-date" datetime="2025-04">Apr 2025</time></span><span class="c-title">HTML, CSS, and Javascript for Web Developers</span><span class="c-meta"><span class="mono">U90PELINTPU1</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/T6CXJND9DE3Y" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>Coursera</span><time class="c-date" datetime="2025-02">Feb 2025</time></span><span class="c-title">Business Analysis &amp; Process Management</span><span class="c-meta"><span class="mono">T6CXJND9DE3Y</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/1XMVIKXDAXKK" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>Google</span><time class="c-date" datetime="2025-01">Jan 2025</time></span><span class="c-title">The Bits and Bytes of Computer Networking</span><span class="c-meta"><span class="mono">1XMVIKXDAXKK</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/L38R8S0D41J8" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>Knowledge Accelerators</span><time class="c-date" datetime="2025-01">Jan 2025</time></span><span class="c-title">From Excel to Power BI</span><span class="c-meta"><span class="mono">L38R8S0D41J8</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/7W4PEFZZ0COT" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>University of Leeds</span><time class="c-date" datetime="2025-01">Jan 2025</time></span><span class="c-title">Foundations of Software Testing and Validation</span><span class="c-meta"><span class="mono">7W4PEFZZ0COT</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/15L2O2PLATIY" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>IBM</span><time class="c-date" datetime="2025-01">Jan 2025</time></span><span class="c-title">Introduction to Software Engineering</span><span class="c-meta"><span class="mono">15L2O2PLATIY</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.coursera.org/verify/70UTKWQWT6DL" target="_blank" rel="noopener" data-g="coursera"><span class="c-meta"><span>Google</span><time class="c-date" datetime="2025-01">Jan 2025</time></span><span class="c-title">Technical Support Fundamentals</span><span class="c-meta"><span class="mono">70UTKWQWT6DL</span></span><span class="c-verify"><span data-i18n="cr.verify">Verify credential</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="cert" href="https://www.bitm.org.bd" target="_blank" rel="noopener" data-g="other"><span class="c-meta"><span>BITM</span><time class="c-date" datetime="2024-05">May 2024</time></span><span class="c-title">Microsoft ASP .net MVC Core with SQL Server 2019</span><span class="c-verify"><span data-i18n="cr.site">Issuer website</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+    <button type="button" class="btn more" id="certs-more" aria-expanded="false" aria-controls="certs" data-i18n="cr.more">Show all 38</button>
+  </div>
+</section>
 
-                <div class="hub-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] font-mono px-2 py-0.5 rounded-md bg-purple-500/15 text-purple-300 border border-purple-500/35">Portfolio Hub</span>
-                            <i data-lucide="layers" class="w-4 h-4 text-purple-400"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-1">Professional Ecosystem</h3>
-                        <p class="text-xs text-slate-400 font-mono mb-2.5">Verified Projects & Engineering Builds</p>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Showcasing full-stack SaaS builds, enterprise documentation, and IEEE-indexed research publications.
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-white/10 mt-auto">
-                        <a href="https://github.com/EshanBarua14" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full glass-button text-white px-4 py-2.5 rounded-xl text-xs font-semibold">
-                            <span>Explore GitHub Profile</span>
-                            <i data-lucide="external-link" class="w-4 h-4 text-purple-400"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="card contact rv">
+      <p class="eyebrow" data-i18n="ct.eye">07 · Contact</p>
+      <h2 data-i18n="ct.h">Have a system that has to work? Let's talk.</h2>
+      <p data-i18n="ct.p">For roles, product partnerships or a project with AIPG, email me. I work from Dhaka (GMT+6) with teams in any time zone.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:baruaeshan333@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg><span>baruaeshan333@gmail.com</span></a>
+        <a class="btn" href="https://www.linkedin.com/in/eshan01" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-in"/></svg><span>LinkedIn</span></a>
+        <a class="btn" href="https://github.com/EshanBarua14" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-gh"/></svg><span>GitHub</span></a>
+        <a class="btn" href="https://aipgbd-nexus.vercel.app" target="_blank" rel="noopener"><span data-i18n="ct.aipg">AIPG website</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
 
-        <!-- Professional Skills & IT Infrastructure Experience Matrix -->
-        <section id="skills-matrix" class="mt-20">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400">
-                    <i data-lucide="cpu" class="w-5 h-5"></i>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-white tracking-tight">Professional Skills & IT Infrastructure Experience Matrix</h2>
-                    <p class="text-xs text-slate-400 font-mono">Specialized competencies across cloud management, cross-tenant synchronization & regional operations</p>
-                </div>
-            </div>
+<footer>
+  <div class="wrap">
+    <span><span data-i18n="ft.c">© 2026 Eshan Barua.</span> <span data-i18n="ft.tag">Built in Bangladesh. Made for the world.</span></span>
+    <nav data-i18n-attr="aria-label:ft.nav" aria-label="Footer">
+      <a href="https://aipgbd-nexus.vercel.app" target="_blank" rel="noopener">AIPG</a>
+      <a href="https://github.com/EshanBarua14" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/eshan01" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#top" data-i18n="ft.top">Back to top</a>
+    </nav>
+  </div>
+</footer>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 inline-block mb-3">Cloud & Workspace</div>
-                        <h3 class="text-base font-bold text-white mb-2">Office 365 & Intune Administration</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed">
-                            Advanced endpoint management, policy deployment, Azure AD / Entra ID identity federation, Exchange Online administration, and compliance security protocols across multi-region enterprise environments.
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-white/10 mt-4 text-[11px] text-emerald-400 font-mono">
-                        ✓ Enterprise Deployment & Security
-                    </div>
-                </div>
-
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 inline-block mb-3">Infrastructure & Sync</div>
-                        <h3 class="text-base font-bold text-white mb-2">Cross-Tenant Sync & Cloud Architecture</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed">
-                            Expertise in multi-tenant cloud synchronization, hybrid identity architecture, automated provisioning pipelines, domain migrations, and high-availability network operations.
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-white/10 mt-4 text-[11px] text-emerald-400 font-mono">
-                        ✓ Seamless Multi-Tenant Integration
-                    </div>
-                </div>
-
-                <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 inline-block mb-3">Regional Operations</div>
-                        <h3 class="text-base font-bold text-white mb-2">Cross-Border IT Operations Management</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed">
-                            Managing enterprise IT infrastructure, SLA compliance, incident response escalation, and vendor management across diverse geographical operations in South & East Asia.
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-white/10 mt-4 text-[11px] text-emerald-400 font-mono">
-                        ✓ Regional Scale & 24/7 Reliability
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Arsenal & Tooling Matrix -->
-        <section id="tech-stack" class="mt-20">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400">
-                    <i data-lucide="layers" class="w-5 h-5"></i>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-white tracking-tight">Technical Arsenal, AI Tools & Tooling Matrix</h2>
-                    <p class="text-xs text-slate-400 font-mono">Languages, frameworks, databases, AI systems, and collaboration infrastructure</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                <!-- Languages & Frameworks -->
-                <div class="tech-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex items-center space-x-2 text-emerald-400 font-mono text-xs mb-3">
-                            <i data-lucide="code" class="w-4 h-4"></i>
-                            <span>LANGUAGES & FRAMEWORKS</span>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">C#</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Python</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Java</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">ASP.NET / .NET Core</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">TypeScript</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Node.js</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">React</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">HTML5 & CSS3</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Tailwind CSS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Databases & Systems -->
-                <div class="tech-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex items-center space-x-2 text-emerald-400 font-mono text-xs mb-3">
-                            <i data-lucide="database" class="w-4 h-4"></i>
-                            <span>DATABASES & STORAGE</span>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">SQL</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">MS SQL Server</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">PostgreSQL</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Redis</span>
-                            <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">SQLite</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI Tools & Autonomous Workflows -->
-                <div class="tech-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex items-center space-x-2 text-emerald-400 font-mono text-xs mb-3">
-                            <i data-lucide="cpu" class="w-4 h-4"></i>
-                            <span>AI TOOLS & WORKFLOWS</span>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-xs text-emerald-300 font-mono">Google AI Studio</span>
-                            <span class="px-3 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-xs text-emerald-300 font-mono">Claude Code CLI</span>
-                            <span class="px-3 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-xs text-emerald-300 font-mono">Gemini / OpenAI</span>
-                            <span class="px-3 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-xs text-emerald-300 font-mono">Suno AI</span>
-                            <span class="px-3 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-xs text-emerald-300 font-mono">ElevenLabs</span>
-                            <span class="px-3 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-xs text-emerald-300 font-mono">Playwright / Selenium</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Collaboration & DevOps Tooling -->
-                <div class="glass-panel rounded-2xl p-6 lg:col-span-3 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center space-x-2 text-emerald-400 font-mono text-xs mb-3">
-                            <i data-lucide="users" class="w-4 h-4"></i>
-                            <span>COLLABORATION & PRODUCTIVITY INFRASTRUCTURE</span>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Jira</span>
-                            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Confluence</span>
-                            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Slack</span>
-                            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Discord</span>
-                            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Zoom</span>
-                            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Docker & Docker Compose</span>
-                            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">Git & GitHub</span>
-                            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-100 font-mono">VS Code</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Enterprise Experience Section -->
-        <section id="experience" class="mt-20">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400">
-                    <i data-lucide="server" class="w-5 h-5"></i>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-white tracking-tight">Enterprise Experience</h2>
-                    <p class="text-xs text-slate-400 font-mono">Track record across capital markets, fintech platforms, telecom, and enterprise architecture</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-                <!-- 1. Software Support Engineer @ Xpert Fintech Ltd. -->
-                <div class="exp-card glass-panel rounded-2xl p-6 group">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <div>
-                                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Software Support Engineer</h3>
-                                <p class="text-sm font-medium text-slate-300">Xpert Fintech Ltd. · Full-time</p>
-                            </div>
-                            <span class="text-xs font-mono px-3 py-1 rounded-full bg-white/10 text-slate-300 border border-white/15">
-                                Aug 2023 - Present
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-300 leading-relaxed mb-3 font-light">
-                            Provide L2/L3 production software support for real-time Order Management Systems (OMS) handling capital market transactions across Dhaka & Chittagong Stock Exchanges, while driving documentation, testing, and stakeholder training.
-                        </p>
-                    </div>
-                    <div class="space-y-2 border-t border-white/10 pt-3 mt-auto">
-                        <div class="flex items-start space-x-2 text-xs text-slate-200">
-                            <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400 mt-0.5 shrink-0"></i>
-                            <span>Authored rigorous technical documentation including BRD, SRS, and User Acceptance Testing (UAT) matrices.</span>
-                        </div>
-                        <div class="flex items-start space-x-2 text-xs text-slate-200">
-                            <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400 mt-0.5 shrink-0"></i>
-                            <span>Delivered executive presentations, digital content, and direct communication to key financial stakeholders.</span>
-                        </div>
-                        <div class="flex items-start space-x-2 text-xs text-slate-200">
-                            <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400 mt-0.5 shrink-0"></i>
-                            <span>Provided end-user training and development for fintech platforms including eKYC and Customer Support Management System (CSMS).</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. System Engineer (RAN) / IT Engineer -->
-                <div class="exp-card glass-panel rounded-2xl p-6 group">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <div>
-                                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">System Engineer (RAN) / IT Engineer</h3>
-                                <p class="text-sm font-medium text-slate-300">Grameenphone Ltd. · Contract</p>
-                            </div>
-                            <span class="text-xs font-mono px-3 py-1 rounded-full bg-white/10 text-slate-300 border border-white/15">
-                                Oct 2021 - Aug 2023
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-300 leading-relaxed mb-4 font-light">
-                            Supported enterprise IT infrastructure, internal networks, and workstation technologies across corporate operations.
-                        </p>
-                    </div>
-                    <div class="space-y-2.5 border-t border-white/10 pt-4 mt-auto">
-                        <div class="flex items-start space-x-2.5 text-xs text-slate-200">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
-                            <span>Executed technical deployments during the Secure LAN Migration Project with zero operational interruption.</span>
-                        </div>
-                        <div class="flex items-start space-x-2.5 text-xs text-slate-200">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
-                            <span>Managed L2 technical escalations and maintained network security configurations.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. Information Technology Executive -->
-                <div class="exp-card glass-panel rounded-2xl p-6 group">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <div>
-                                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Information Technology Executive</h3>
-                                <p class="text-sm font-medium text-slate-300">Zenith Engineering Bangladesh · Full-time</p>
-                            </div>
-                            <span class="text-xs font-mono px-3 py-1 rounded-full bg-white/10 text-slate-300 border border-white/15">
-                                May 2020 - Aug 2021
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-300 leading-relaxed mb-4 font-light">
-                            Administered enterprise IT infrastructure, hardware setups, internal networks, and operational software systems.
-                        </p>
-                    </div>
-                    <div class="space-y-2.5 border-t border-white/10 pt-4 mt-auto">
-                        <div class="flex items-start space-x-2.5 text-xs text-slate-200">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
-                            <span>Maintained data backup schedules, system monitoring, and hardware/software troubleshooting protocols.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. Independent Systems & Software Architecture -->
-                <div class="exp-card glass-panel rounded-2xl p-6 group">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <div>
-                                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Lead System Architect & Developer</h3>
-                                <p class="text-sm font-medium text-slate-300">Independent Software Development</p>
-                            </div>
-                            <span class="text-xs font-mono px-3 py-1 rounded-full bg-white/10 text-slate-300 border border-white/15">
-                                2023 - Present
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-300 leading-relaxed mb-4 font-light">
-                            Architecting and deploying production-grade enterprise SaaS suites, multi-tenant hospital management systems, cloud HR platforms, and autonomous AI-driven agents.
-                        </p>
-                    </div>
-                    <div class="space-y-2.5 border-t border-white/10 pt-4 mt-auto">
-                        <div class="flex items-start space-x-2.5 text-xs text-slate-200">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
-                            <span>Engineered full-stack applications (CareFlow HMS, E-HR OS, DocForge, VMS) using React, ASP.NET Core, PostgreSQL, and Docker.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Flagship Systems & Projects Section -->
-        <section id="projects" class="mt-20">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400">
-                    <i data-lucide="cpu" class="w-5 h-5"></i>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-white tracking-tight">Flagship Systems & Software Projects</h2>
-                    <p class="text-xs text-slate-400 font-mono">Production-grade enterprise SaaS suites and autonomous pipelines</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                <!-- Vortex AI Studio Card -->
-                <div class="project-card glass-panel rounded-2xl p-6 border-emerald-500/40">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">AI Subscriptions & Digital Services</span>
-                        <h3 class="text-base font-bold text-white mt-3 mb-2">Vortex AI Studio</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Local-first digital services platform offering verified AI subscriptions (ChatGPT Plus, Claude Pro, Midjourney, Grok, ElevenLabs) & infrastructure (NVMe Hosting, .COM Domains, SSL) with bKash/Nagad local payments and 5-15 min activation.
-                        </p>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 mb-3.5">
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">bKash / Nagad</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Automated Activation</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">SaaS Powered</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <a href="https://vortex-ai-studio-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i><span>Vortex Platform</span>
-                            </a>
-                            <a href="https://facebook.com/vortexaistudio" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-cyan-300 hover:text-cyan-200 flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="facebook" class="w-3.5 h-3.5"></i><span>Official Page</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Healthcare / Multi-Tenant</span>
-                        <h3 class="text-base font-bold text-white mt-3 mb-2">CareFlow HMS</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Multi-tenant hospital platform engineered with AES-256 encrypted persistence, role-based workflows, cryptographic audit logging, and FHIR R4 interoperability.
-                        </p>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 mb-3.5">
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">React</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">TypeScript</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Express</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">PostgreSQL</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <a href="https://hospital-management-system-beta-olive.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i><span>Live Demo</span>
-                            </a>
-                            <a href="https://github.com/EshanBarua14/Hospital-Management-System" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-300 hover:text-white flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="github" class="w-3.5 h-3.5"></i><span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Cloud HR / Compliance</span>
-                        <h3 class="text-base font-bold text-white mt-3 mb-2">E-HR Operating System</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Production-grade Cloud HR platform featuring NBR income tax/TDS, biometric/GPS attendance, festival bonuses, and CQRS clean architecture with 709 passing tests.
-                        </p>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 mb-3.5">
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">ASP.NET Core 8</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">React 19</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">PostgreSQL 16</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <a href="https://e-hr-one.vercel.app" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i><span>Live Demo</span>
-                            </a>
-                            <a href="https://github.com/EshanBarua14/E-HR" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-300 hover:text-white flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="github" class="w-3.5 h-3.5"></i><span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Document Management / AI</span>
-                        <h3 class="text-base font-bold text-white mt-3 mb-2">DocForge Enterprise</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Multi-tenant Document Management & OCR platform featuring camera scanning, PDF suite, e-signatures, Gemini AI document Q&A, and bilingual OCR (English & Bengali).
-                        </p>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 mb-3.5">
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">React 19</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Node.js</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Firebase</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Gemini AI</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <a href="https://doc-forge-chi.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i><span>Live Demo</span>
-                            </a>
-                            <a href="https://github.com/EshanBarua14/DocForge" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-300 hover:text-white flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="github" class="w-3.5 h-3.5"></i><span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Procurement & Tax / PPR 2008</span>
-                        <h3 class="text-base font-bold text-white mt-3 mb-2">Vendor Management System (VMS)</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Institutional procurement platform aligned with PPR 2008 and NBR VAT Act 2012 featuring automated VAT/TDS computation, dual-envelope bid evaluation, and immutable audit trails.
-                        </p>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 mb-3.5">
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Node.js</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">PostgreSQL</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Redis</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Docker</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <a href="https://vendor-management-system-vms.onrender.com/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i><span>Live Demo</span>
-                            </a>
-                            <a href="https://github.com/EshanBarua14/Vendor-Management-System-VMS-" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-300 hover:text-white flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="github" class="w-3.5 h-3.5"></i><span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Autonomous AI Agent</span>
-                        <h3 class="text-base font-bold text-white mt-3 mb-2">JobAgent v5</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Self-hosted AI job discovery agent featuring multi-source search (LinkedIn, BDJobs, Indeed), TF-IDF CV matching, Playwright browser automation, and privacy-first local SQLite persistence.
-                        </p>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 mb-3.5">
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Python</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">FastAPI</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Playwright</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">SQLite</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <a href="https://job-finder-agent-eyqr.onrender.com/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i><span>Live Demo</span>
-                            </a>
-                            <a href="https://github.com/EshanBarua14/Job-Finder-Agent" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-300 hover:text-white flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="github" class="w-3.5 h-3.5"></i><span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Retail SaaS / POS</span>
-                        <h3 class="text-base font-bold text-white mt-3 mb-2">Metro SMS (Store Management)</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Multi-tenant SaaS store management system for grocery, pharmacy, and retail with POS terminal, camera shelf scanning, CRM loyalty, and Claude-powered AI store assistant.
-                        </p>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 mb-3.5">
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">React 19</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Supabase</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Tailwind CSS</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <a href="https://aipgbd-sms.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i><span>Live Demo</span>
-                            </a>
-                            <a href="https://github.com/EshanBarua14/AIPGBD-SMS" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-300 hover:text-white flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="github" class="w-3.5 h-3.5"></i><span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AIPGBD Nexus Project Card -->
-                <div class="project-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Central Digital Hub</span>
-                        <h3 class="text-base font-bold text-white mt-3 mb-2">AIPGBD Nexus v7</h3>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-4">
-                            Central digital hub connecting AIPG Studios and AIPG Systems with bilingual support and 7-layer interactive backgrounds.
-                        </p>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 mb-3.5">
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">React 18</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">Supabase</span>
-                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-slate-200">ASP.NET Core</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <a href="https://aipgbd-nexus.vercel.app" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i><span>Live Platform</span>
-                            </a>
-                            <a href="https://github.com/EshanBarua14/AIPGBD-Nexus" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-300 hover:text-white flex items-center space-x-1 hover:scale-105 transition-transform">
-                                <i data-lucide="github" class="w-3.5 h-3.5"></i><span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education & Leadership Section -->
-        <section id="education" class="mt-20">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400">
-                    <i data-lucide="graduation-cap" class="w-5 h-5"></i>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-white tracking-tight">Education & Leadership</h2>
-                    <p class="text-xs text-slate-400 font-mono">Academic foundation and extracurricular leadership milestones</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-                <div class="edu-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">University</span>
-                            <span class="text-xs font-mono text-slate-300">2015 – 2019</span>
-                        </div>
-                        <h3 class="text-base font-bold text-white mb-1">North South University</h3>
-                        <p class="text-xs font-mono text-cyan-400 mb-3">Bachelor of Science - BS, Computer Science & Engineering</p>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed">
-                            Rigorous academic grounding in computer science fundamentals, data structures, algorithms, and advanced software systems architecture.
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-white/10 mt-5">
-                        <a href="https://www.northsouth.edu" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1 text-xs text-emerald-400 hover:text-emerald-300 font-semibold">
-                            <span>Institution Portal</span>
-                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="edu-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Higher Secondary</span>
-                            <span class="text-xs font-mono text-slate-300">2011 – 2013</span>
-                        </div>
-                        <h3 class="text-base font-bold text-white mb-1">Notre Dame College</h3>
-                        <p class="text-xs font-mono text-cyan-400 mb-3">HSC, Science</p>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-3">
-                            Focused on advanced science curriculum and analytical problem solving.
-                        </p>
-                        <div class="p-3 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] text-slate-200">
-                            <span class="text-emerald-400 font-semibold">Leadership:</span> Assistant General Secretary of Notre Dame Science Club
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-white/10 mt-5">
-                        <span class="text-xs font-mono text-slate-300">Dhaka, Bangladesh</span>
-                    </div>
-                </div>
-
-                <div class="edu-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Secondary</span>
-                            <span class="text-xs font-mono text-slate-300">2001 – 2011</span>
-                        </div>
-                        <h3 class="text-base font-bold text-white mb-1">KPB School & College</h3>
-                        <p class="text-xs font-mono text-cyan-400 mb-3">SSC, Science</p>
-                        <p class="text-xs text-slate-300 font-light leading-relaxed mb-3">
-                            Foundational science education and technical curiosity development.
-                        </p>
-                        <div class="p-3 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] text-slate-200">
-                            <span class="text-emerald-400 font-semibold">Leadership:</span> Founder panel member of the KPBSC Science Club
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-white/10 mt-5">
-                        <span class="text-xs font-mono text-slate-300">Bangladesh</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Slideable & Clickable Certifications Section (All 38 Certifications with Direct Verification Links) -->
-        <section class="mt-20">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
-                <div class="flex items-center space-x-3">
-                    <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400">
-                        <i data-lucide="award" class="w-5 h-5"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-white tracking-tight">Verified Certifications & Licenses</h2>
-                        <p class="text-xs text-slate-400 font-mono">38 professional credentials across AI, Cloud, DevOps, and Engineering</p>
-                    </div>
-                </div>
-
-                <div class="flex items-center space-x-2 self-end sm:self-auto">
-                    <button onclick="scrollCerts('left')" class="glass-button p-2.5 rounded-xl text-white transition-all hover:scale-105">
-                        <i data-lucide="chevron-left" class="w-4 h-4"></i>
-                    </button>
-                    <button onclick="scrollCerts('right')" class="glass-button p-2.5 rounded-xl text-white transition-all hover:scale-105">
-                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div id="certs-container" class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth pb-4 items-stretch">
-                <!-- Cert 1 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
-                            <span class="text-xs font-mono text-slate-300">Sep 2026</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Introduction to Model Context Protocol</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 9a277d7a87d729e12358ddf8b3057bcf</p>
-                    </div>
-                    <a href="https://academy.claude.com/verify/9a277d7a87d729e12358ddf8b3057bcf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 2 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
-                            <span class="text-xs font-mono text-slate-300">Sep 2026</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Claude Code in Action</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: d0bc85d7c29b22f399f3a1f6ca36dcc1</p>
-                    </div>
-                    <a href="https://academy.claude.com/verify/d0bc85d7c29b22f399f3a1f6ca36dcc1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 3 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
-                            <span class="text-xs font-mono text-slate-300">Sep 2026</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Claude Platform 101</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: b21d7e2d6e44881181c8146f6d1b7b96</p>
-                    </div>
-                    <a href="https://academy.claude.com/verify/b21d7e2d6e44881181c8146f6d1b7b96" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 4 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
-                            <span class="text-xs font-mono text-slate-300">Sep 2026</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Introduction to Claude Cowork</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 0ce41199eabe11062114477b6fd0564d</p>
-                    </div>
-                    <a href="https://academy.claude.com/verify/0ce41199eabe11062114477b6fd0564d" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 5 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
-                            <span class="text-xs font-mono text-slate-300">Sep 2026</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Claude Code 101</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 4777cb3bb06f16bd17c9e938c3dc2524</p>
-                    </div>
-                    <a href="https://academy.claude.com/verify/4777cb3bb06f16bd17c9e938c3dc2524" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 6 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Anthropic</span>
-                            <span class="text-xs font-mono text-slate-300">Sep 2026</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Claude Academy: Claude 101</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 89e4e552a6792d80f94fe6c159c27794</p>
-                    </div>
-                    <a href="https://academy.claude.com/verify/89e4e552a6792d80f94fe6c159c27794" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 7 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Canva</span>
-                            <span class="text-xs font-mono text-slate-300">Aug 2026</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Graphic Design Essentials</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 791f89</p>
-                    </div>
-                    <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Credential</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 8 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Project Management Institute</span>
-                            <span class="text-xs font-mono text-slate-300">Aug 2026</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Practical Application of Generative AI for Project Managers</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 776570171860</p>
-                    </div>
-                    <a href="https://www.pmi.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify PMI Badge</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 9 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Project Management Institute</span>
-                            <span class="text-xs font-mono text-slate-300">Aug 2026</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Talking to AI: Prompt Engineering for Project Managers</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 563870170883</p>
-                    </div>
-                    <a href="https://www.pmi.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify PMI Badge</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 10 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">React Essential Training & PWA Architecture</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 7ef00e3a...2d3a4</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/7ef00e3a60933da10a209eb5591ebac976eb2c2db5176468b61368d74272d3a4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 11 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">React: Building Progressive Web Apps (PWAs)</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: e47a38d051603...8ec872</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/e47a38d051603c9644edb7e278220238ecb67eb649e2108ed971f53c718ec872" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 12 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">NoSQL Essential Training</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 59a8bf9761fe...87c56aac</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/59a8bf9761fe0b630865b2c3d3b7c530a5fd10a2fc40207de73a833a87c56aac" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 13 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Creating API Documentation</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 509d969060ae...6989c8e2</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/509d969060ae0f552785f4780b47bc9d66917f46f38f017cb5c066936989c8e2" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 14 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Slack Essential Training</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 5c8d79a83417...be2d973</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/5c8d79a83417e0c0859c3d71e19f3479c1f2c01e5e9a23ece11a90fe4be2d973" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 15 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">AWS / LinkedIn</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Building Serverless Applications in AWS</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: d855a8a85adf...fcc67c66</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/d855a8a85adf364a6b549d68e99a7142e436f8006bae58410610bf17fcc67c66" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 16 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to NoSQL</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: cb0c43d7978b...35d50bb</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/cb0c43d7978b96c4c477f211c07e08a6ce7b5b5c871769f3ef3d216fa35d50bb" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 17 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Creating a Responsive Web Design</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: da11ace5a653...1966c0fe</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/da11ace5a653ecf8e61d5d0418195eb87d2471147b707a0dcf0dc6871966c0fe" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 18 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">PMI</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Learning Confluence</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 737ac2716e17...2fd9a3dd</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/737ac2716e175dc515a616106c9ef43a30b785504c13a3ff07ad00512fd9a3dd" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 19 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Learning Jira: Sprints, Bugs & Tracking</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 7934c14c519e...06f35ac102</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/7934c14c519ec4c63539d719a2258580328d5586e1651fdb48d87c06f35ac102" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 20 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Prompt Engineering: How to Talk to the AIs</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 9491334dece3...22435e8ffd</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/9491334dece355fdd5324fde631a645b017ce5d82f3311c18e0c0622435e8ffd" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 21 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Automated Software Refactoring with OpenRewrite</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: d644caf43f17...9f4cc432f</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/d644caf43f179325727aad3af63162d1a40497242b1e19216a1d4d9f4cc432f" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 22 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">CompTIA</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Agile Software Development</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 8ce04fc4ba39...3860a4b67</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/8ce04fc4ba39d92cf8871b403c3b242d61684236236ba4831d35d943860a4b67" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 23 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">WordPress: Mastering Full Site Editing</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 83b0b5486dea...26a8bbf</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/83b0b5486dea6b4bce592c940b334be9daa66f2eb7f222a8a4a98b24c26a8bbf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 24 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">LinkedIn Learning</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Canva for Web and Digital Design Projects</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 067e3b0dd553...702a3fa3e5</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/067e3b0dd55347a16ddb2a30a843a55adf55cec587218ab8827afc702a3fa3e5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 25 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">PMI</span>
-                            <span class="text-xs font-mono text-slate-300">Nov 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Communicating with Confidence</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 9f27d6f9517c...4fecd0a0f78</p>
-                    </div>
-                    <a href="https://www.linkedin.com/learning/verify/9f27d6f9517c00a09cbcda11c5290027586f498572e228dca05db4fecd0a0f78" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Certificate</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 26 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera</span>
-                            <span class="text-xs font-mono text-slate-300">Jun 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to Selenium</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: KS26F7UJPVTL</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/KS26F7UJPVTL" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 27 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Meta</span>
-                            <span class="text-xs font-mono text-slate-300">Jun 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to Front-End Development</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: DN2MXOVCAUY1</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/DN2MXOVCAUY1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 28 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM</span>
-                            <span class="text-xs font-mono text-slate-300">May 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to Business Analysis</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: CXX8MIOY02E3</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/CXX8MIOY02E3" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 29 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM</span>
-                            <span class="text-xs font-mono text-slate-300">May 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to DevOps</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 21V9HHM3BGI1</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/21V9HHM3BGI1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 30 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM</span>
-                            <span class="text-xs font-mono text-slate-300">Apr 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Developing Websites and Front-Ends with Bootstrap</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: R5ZRZS4CNH6B</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/R5ZRZS4CNH6B" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 31 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Johns Hopkins</span>
-                            <span class="text-xs font-mono text-slate-300">Apr 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">HTML, CSS, and Javascript for Web Developers</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: U90PELINTPU1</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/U90PELINTPU1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 32 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Google</span>
-                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">The Bits and Bytes of Computer Networking</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 1XMVIKXDAXKK</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/1XMVIKXDAXKK" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 33 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Knowledge Accelerators</span>
-                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">From Excel to Power BI</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: L38R8S0D41J8</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/L38R8S0D41J8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 34 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">University of Leeds</span>
-                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Foundations of Software Testing and Validation</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 7W4PEFZZ0COT</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/7W4PEFZZ0COT" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 35 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Coursera</span>
-                            <span class="text-xs font-mono text-slate-300">Feb 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Business Analysis & Process Management</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: T6CXJND9DE3Y</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/T6CXJND9DE3Y" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 36 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">IBM</span>
-                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Introduction to Software Engineering</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 15L2O2PLATIY</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/15L2O2PLATIY" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 37 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">BITM</span>
-                            <span class="text-xs font-mono text-slate-300">May 2024</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Microsoft ASP .net MVC Core with SQL Server 2019</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">Issuer: BITM</p>
-                    </div>
-                    <a href="https://www.bitm.org.bd" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify BITM Portal</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-                <!-- Cert 38 -->
-                <div class="cert-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">Google</span>
-                            <span class="text-xs font-mono text-slate-300">Jan 2025</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-white mb-2 leading-snug">Technical Support Fundamentals</h3>
-                        <p class="text-xs text-slate-300 font-mono mb-3">ID: 70UTKWQWT6DL</p>
-                    </div>
-                    <a href="https://www.coursera.org/verify/70UTKWQWT6DL" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors pt-3 border-t border-white/10 hover:scale-105 mt-auto">
-                        <span>Verify Coursera ID</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Academic Publications Section -->
-        <section class="mt-20">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="p-2.5 bg-emerald-500/10 rounded-2xl border border-emerald-500/30 text-emerald-400">
-                    <i data-lucide="book-open" class="w-5 h-5"></i>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-white tracking-tight">IEEE Scholarly Research</h2>
-                    <p class="text-xs text-slate-400 font-mono">Peer-reviewed publications on scalable web systems</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-                <div class="research-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">ICCIT 2021</span>
-                        <h3 class="text-base font-bold text-white mt-3.5 mb-2.5">Development of Web-Based System for Essential Services During the COVID-19 Pandemic</h3>
-                        <p class="text-xs text-slate-200 font-light leading-relaxed">
-                            Multi-tenant web application platform providing pandemic essential services, nurse/volunteer coordination, shop procurement, and fitness/nutrition consultation with verified certificate workflows.
-                        </p>
-                    </div>
-                </div>
-                <div class="research-card glass-panel rounded-2xl p-6">
-                    <div>
-                        <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">ICCMC 2021</span>
-                        <h3 class="text-base font-bold text-white mt-3.5 mb-2.5">Bid & Buy: An Effective Online-Based Platform for Client and Vendor</h3>
-                        <p class="text-xs text-slate-200 font-light leading-relaxed">
-                            Design and implementation of an online bidding system optimizing modular buying and selling for business institutions and governmental entities.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="mt-12 border-t border-white/10 py-4 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400">
-            <div>
-                © 2026 Eshan Barua. Engineered with absolute precision under AIPG Systems & Studios.
-            </div>
-            <div class="flex space-x-6 mt-2 md:mt-0 font-mono">
-                <a href="https://aipgbd-nexus.vercel.app/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors">AIPG Hub</a>
-                <a href="https://www.northsouth.edu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors">North South University</a>
-                <a href="mailto:baruaeshan333@gmail.com" class="hover:text-emerald-400 transition-colors">Direct Email</a>
-            </div>
-        </footer>
-
-    </main>
-
-    <script>
-        lucide.createIcons();
-
-        // Canvas Background Animation
-        const canvas = document.getElementById('bg-canvas');
-        const ctx = canvas.getContext('2d');
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        const particles = [];
-        const particleCount = Math.floor(window.innerWidth / 30);
-        const codeSymbols = ['{ }', '01', 'OMS', 'API', 'SQL', 'AI', 'C#', 'TS', 'AWS', 'FHIR', 'λ', '</>', 'BS', 'AIPG', 'REACT'];
-
-        for (let i = 0; i < particleCount; i++) {
-            particles.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                vx: (Math.random() - 0.5) * 0.7,
-                vy: (Math.random() - 0.5) * 0.7,
-                size: Math.random() * 2.5 + 1,
-                symbol: codeSymbols[Math.floor(Math.random() * codeSymbols.length)],
-                opacity: Math.random() * 0.5 + 0.25
-            });
-        }
-
-        function animateCanvas() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            ctx.strokeStyle = 'rgba(16, 185, 129, 0.12)';
-            ctx.lineWidth = 1;
-
-            for (let i = 0; i < particles.length; i++) {
-                for (let j = i + 1; j < particles.length; j++) {
-                    const dx = particles[i].x - particles[j].x;
-                    const dy = particles[i].y - particles[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-
-                    if (dist < 150) {
-                        ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.stroke();
-                    }
-                }
-            }
-
-            particles.forEach(p => {
-                p.x += p.vx;
-                p.y += p.vy;
-
-                if (p.x < 0) p.x = canvas.width;
-                if (p.x > canvas.width) p.x = 0;
-                if (p.y < 0) p.y = canvas.height;
-                if (p.y > canvas.height) p.y = 0;
-
-                ctx.fillStyle = `rgba(16, 185, 129, ${p.opacity})`;
-                ctx.font = '11px JetBrains Mono, monospace';
-                ctx.fillText(p.symbol, p.x, p.y);
-
-                ctx.beginPath();
-                ctx.arc(p.x, p.y - 12, p.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(52, 211, 153, ${p.opacity * 0.8})`;
-                ctx.fill();
-            });
-
-            requestAnimationFrame(animateCanvas);
-        }
-        animateCanvas();
-
-        function focusTerminal() {
-            document.getElementById('terminal-input').focus();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function scrollCerts(direction) {
-            const container = document.getElementById('certs-container');
-            const scrollAmount = 350;
-            if (direction === 'left') {
-                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-            } else {
-                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-            }
-        }
-
-        const terminalLogs = document.getElementById('terminal-logs');
-        const terminalInput = document.getElementById('terminal-input');
-
-        const portfolioData = {
-            about: [
-                "Name: Eshan Barua",
-                "Role: Software Support Engineer @ Xpert Fintech Ltd.",
-                "Expertise: Order Management Systems (OMS) for Dhaka & Chittagong Stock Exchanges, Full-Stack Architecture, and Generative AI Workflows."
-            ],
-            xpert: [
-                "Employment: Software Support Engineer at Xpert Fintech Ltd. (Aug 2023 - Present)",
-                "Key Contributions: Real-time Order Management Systems (OMS) for Dhaka/Chittagong Stock Exchanges, UAT matrices, BRD/SRS documentation, executive presentations, stakeholder communications, digital content, and user training for eKYC & Customer Support Management Systems (CSMS)."
-            ],
-            education: [
-                "University: North South University (B.Sc. in Computer Science & Engineering)",
-                "College: Notre Dame College",
-                "School: KPB School & College"
-            ],
-            research: [
-                "IEEE Publications (2021):",
-                "1. Development of Web-Based System for Essential Services During the COVID-19 Pandemic (ICCIT)",
-                "2. Bid & Buy: An Effective Online-Based Platform for Client and Vendor (ICCMC)"
-            ],
-            roles: [
-                "Target Open Roles:",
-                "1. AI Engineer",
-                "2. Senior Software Engineer",
-                "3. Product / Project Manager"
-            ],
-            stack: [
-                "Languages & Frameworks: C#, Python, Java, ASP.NET Core, TypeScript, Node.js, React, Tailwind CSS",
-                "Databases: SQL Server, PostgreSQL, Redis, SQLite",
-                "AI & Automation: Google AI Studio, Claude Code CLI, Gemini, Playwright"
-            ],
-            contact: [
-                "Email: baruaeshan333@gmail.com",
-                "Location: Dhaka, Bangladesh",
-                "LinkedIn: https://www.linkedin.com/in/eshan01"
-            ]
-        };
-
-        function handleTerminalCommand(e) {
-            e.preventDefault();
-            const rawCmd = terminalInput.value.trim().toLowerCase();
-            if (!rawCmd) return;
-
-            let response = "";
-
-            if (rawCmd === 'help') {
-                response = "Available Knowledge Base Commands:\n  - about      : Summary of Eshan Barua\n  - xpert      : Details on Xpert Fintech, UAT & Documentation\n  - education  : North South University & academic background\n  - research   : IEEE indexed publications\n  - roles      : Target career & engineering roles\n  - stack      : Technical arsenal & tools\n  - contact    : Direct email and location\n  - clear      : Clear terminal screen";
-            } else if (rawCmd === 'about' || rawCmd === 'whoami' || rawCmd === 'eshan') {
-                response = portfolioData.about.join("\n");
-            } else if (rawCmd.includes('xpert') || rawCmd.includes('uat') || rawCmd.includes('brd') || rawCmd.includes('srs')) {
-                response = portfolioData.xpert.join("\n");
-            } else if (rawCmd.includes('edu') || rawCmd.includes('north south') || rawCmd.includes('nsu')) {
-                response = portfolioData.education.join("\n");
-            } else if (rawCmd.includes('research') || rawCmd.includes('ieee') || rawCmd.includes('publication')) {
-                response = portfolioData.research.join("\n");
-            } else if (rawCmd === 'roles' || rawCmd.includes('hire')) {
-                response = portfolioData.roles.join("\n");
-            } else if (rawCmd === 'stack' || rawCmd.includes('tech') || rawCmd.includes('skills')) {
-                response = portfolioData.stack.join("\n");
-            } else if (rawCmd === 'contact' || rawCmd.includes('email')) {
-                response = portfolioData.contact.join("\n");
-            } else if (rawCmd === 'clear') {
-                terminalLogs.innerHTML = '<div class="text-emerald-400 font-bold">ESHAN BARUA // PROFESSIONAL KNOWLEDGE BASE v10.5 ONLINE</div><div>Ask anything about my background, career, education, or projects!</div><div class="text-cyan-300">Type <span class="bg-white/10 px-1.5 py-0.5 rounded text-white">help</span> to view available queries & commands...</div>';
-                terminalInput.value = '';
-                return;
-            } else {
-                response = `Found no exact match for "${rawCmd}". Type "help" to explore available knowledge base topics or ask about xpert, uat, brd, srs, or roles.`;
-            }
-
-            const cmdDiv = document.createElement('div');
-            cmdDiv.className = 'text-emerald-400 font-semibold';
-            cmdDiv.textContent = "> " + terminalInput.value;
-            terminalLogs.appendChild(cmdDiv);
-
-            const resDiv = document.createElement('div');
-            resDiv.className = 'text-slate-100 whitespace-pre-wrap leading-relaxed mt-1 mb-2 bg-white/[0.06] p-3 rounded-lg border border-white/10 shadow-md';
-            resDiv.textContent = response;
-            terminalLogs.appendChild(resDiv);
-
-            terminalLogs.scrollTop = terminalLogs.scrollHeight;
-            terminalInput.value = '';
-        }
-    </script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/hero-shader.js" defer></script>
 </body>
 </html>
