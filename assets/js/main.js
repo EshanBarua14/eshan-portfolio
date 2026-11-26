@@ -54,12 +54,13 @@
   var ROUTES = [
     [/^(help|\?|man)$/, 't.help'],
     [/^(about|whoami|eshan)$/, 't.about'],
-    [/(product|work|project|oms|hrms|hms|vms|dms|brain|reach)/, 't.products'],
+    [/(hire|price|pricing|service|quote|cost)/, 't.hire'],
+    [/(product|work|project|hrms|hms|vms|dms|brain|reach)/, 't.products'],
     [/(stack|tech|skill)/, 't.stack'],
-    [/(xpert|fintech|uat|brd|srs|job)/, 't.xpert'],
+    [/(xpert|fintech|uat|brd|srs)/, 't.xpert'],
     [/(research|ieee|paper|publication)/, 't.research'],
     [/(edu|nsu|north south|school|college)/, 't.education'],
-    [/(role|hire|open)/, 't.roles'],
+    [/(role|open|job)/, 't.roles'],
     [/(contact|email|mail|linkedin|github)/, 't.contact']
   ];
   function line(cls, text) {
